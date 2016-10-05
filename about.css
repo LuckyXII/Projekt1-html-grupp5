@@ -357,7 +357,7 @@ h2 {
     }
     
 }
-@media (max-width: 340px) {
+@media (max-width: 410px) {
     .pic > .profilepics > img {
     height: 80px;
     width: 80px;
@@ -367,8 +367,5 @@ h2 {
     .pic > .profilepics {
     display: inline-block;
     height: 120px;
-        
-
-
-
 }
+    
