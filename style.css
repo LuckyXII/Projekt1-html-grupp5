@@ -585,7 +585,14 @@ ul > button {
 .slides {
     z-index: 1;
 }
+
+@media (max-width:880px){
+    #main1{
+        height:50px;
+    }
+
+    
+}
 @media (max-width: 200px) {
     body {
         background-image: url(seamless.jpg);
-}
