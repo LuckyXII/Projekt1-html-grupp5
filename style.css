@@ -5,9 +5,13 @@
 /*template flexbox model*/
 
 
+#header {
+    border: 5px solid rgba(211, 211, 211, 1);
+    border-radius: 8px;
+}
 
-#header, #menu, #main1, #main2, #main3, #main4,#main5 {
-    border: 8px solid rgba(211, 211, 211, 0.7);
+#menu, #main1, #main2, #main3, #main4,#main5 {
+    border: 5px solid rgba(211, 211, 211, 0.7);
     border-radius: 8px;
     
 }
@@ -29,13 +33,6 @@
     
     margin-left: 5%;
     margin-right: 5%;
-}
-
-
-#header {
-    flex-grow: 1;
-    line-height: 10px;
-    
 }
 
 #main1 {
@@ -188,6 +185,8 @@ body {
     background-size: 540px;
     background-color: #A4C468;
     font-weight: bold;
+    flex-grow: 1;
+    line-height: 10px;
     
 }
 
@@ -334,13 +333,13 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 
 
 #main3 {
-    background-image: url(http://www.dhresource.com/0x0s/f2-albu-g2-M01-07-B1-rBVaGlZK0CKARQBTAAaiS6aJ5UM346.jpg/2016%20hot%20sale%20Outdoor%20Gear%20Stainless%20Steel%20Hiking%20Mini%20portable%20Camping%20Stoves%20Fire%20jets%20with%201000-1400%20Burning%20Temperature.jpg);
+    background-image: url(http://www.kathmandu.com.au/media/catalog/product/cache/2/image/2000x/9df78eab33525d08d6e5fb8d27136e95/5/1/51197_OdysseySB_639.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
 #main4 {
-    background-image: url(http://www.gooutdoors.co.uk/Lib/Img/Promotions/2016/August/department/sale-campingaz--2-series-bbq.jpg);
+    background-image: url(https://www.travelers.com/iw-images/resources/Weather/Medium/survival_kit_medium.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -349,9 +348,9 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
     
     
     margin-bottom: 24px;
-    border: 10px solid rgba(211,211,211, 0.7);
-    border-radius: 8px;
-    background-color: rgba(164, 196, 104, 0.6);
+    border: 5px solid rgba(211,211,211, 0.7);
+    border-radius: 5px;
+    background-color: rgba(48, 48, 48, 0.8);
    
 }
 
