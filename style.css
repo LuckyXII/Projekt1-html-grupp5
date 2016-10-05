@@ -10,13 +10,13 @@
     border-radius: 8px;
 }
 
+
 #menu, #main1, #main2, #main3, #main4,#main5 {
     border: 5px solid rgba(211, 211, 211, 0.7);
     border-radius: 8px;
-    
 }
 
-#menu, #main1, #main2, main5 {
+#menu, #main1, #main2, #main5, #main5a {
     
     justify-content: center;
     
@@ -29,7 +29,7 @@
     flex-wrap: nowrap;
 }
 
-#main2, #second,#main5 {
+#main2, #second,#main5, #main5a {
     
     margin-left: 5%;
     margin-right: 5%;
@@ -73,7 +73,7 @@
 
 
 
-#main5 {
+#main5, #main5a {
     flex-grow: 1;
     line-height: 0px;
     margin-top: 36px;
@@ -354,6 +354,16 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
    
 }
 
+#main5a {
+    
+    
+    margin-bottom: 24px;
+    border: 10px solid rgba(211,211,211, 0.7);
+    border-radius: 8px;
+    background-color: rgba(164, 196, 104, 0.6);
+   
+}
+
 
     
 /*x*/
@@ -367,7 +377,7 @@ footer{
    background-color: #A4C468 ;
    flex-basis: 100%;
    border-radius:5px;
-   height: 12em;
+   height: 16em;
    margin-top: 32px;
    border-top: 5px solid lightgray;
    border-right: 5px solid lightgray;
@@ -577,5 +587,5 @@ ul > button {
 }
 @media (max-width: 200px) {
     body {
-        background-image: url(seamless.jpg)
+        background-image: url(seamless.jpg);
 }

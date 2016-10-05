@@ -396,15 +396,13 @@ footer > div h5{
 
 .latestPost{
     height:30px;
-    flex-flow: 15;
     width:90px;
     padding:5px;
     border-right: 1px solid olive;
 }
 
 .nrPosts{
-     height:30px;
-    flex-flow: 5;
+    height:30px;
     padding:5px;
 }
 
@@ -438,7 +436,6 @@ footer > div h5{
     flex: 1 1 auto;
     width:100%;
     box-shadow: none;
-    background-color: none;
     height:2px;
 }
 
@@ -477,7 +474,6 @@ footer > div h5{
     
     #searchDiv{
        flex-basis:0;
-        flex-flow: 1;
     
     }
     
