@@ -50,10 +50,7 @@ li{
 
 .anchor:hover{
     text-decoration: none;
-    color:gray;
-    border:1px solid lightGray;
-    border-radius: 3px;
-    
+    color:lightgray; 
 }
 
 .popAnchor{
@@ -120,8 +117,8 @@ li{
 
 
 .decorativeLine{
-   
-    width: 100%; 
+    display:block;
+    width: 96%; 
     height:1px; 
     background: #826142; 
     overflow: hidden;
@@ -144,14 +141,15 @@ li{
 .navTxt{
     display:inline-block;
     position:relative;
-    color:beige;
+    color:white;
     font-weight: bold;
     font-size: 32px;
     text-shadow:
     -1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
-    1px 1px 0 #000;  
+    1px 1px 0 #000; 
+    font-family: 'lobster', cursive;
    
 }
 
@@ -172,6 +170,7 @@ li{
 
 
 footer{
+    border-top: 3px solid darkGray;
     background-color: #A4C468;
     height:11em;
 }
@@ -208,6 +207,9 @@ footer div .anchor{
     padding:0px;
 }
 
+#logInBtn{
+    color:gray;
+}
 
 .navPic{
     display:flex;
@@ -219,8 +221,12 @@ footer div .anchor{
 
 
 #harambe{
+    position:relative;
     font-size: 9px;
     color:white;
+    display:block;
+    height:20px;
+    text-align: center;
 }
 
 
@@ -255,5 +261,30 @@ footer div .anchor{
 #navPicFive{
     background-image: url("http://image.shutterstock.com/display_pic_with_logo/140251/256750474/stock-photo-traveling-tourism-tourist-tent-camping-in-desert-256750474.jpg");
     height:200px;   
+}
+
+@media (max-width:570px){
+    footer{
+        height:12em;
+    }
+}
+
+@media (max-width:570px){
+    
+    #logo, #logo img{
+        height:120px;
+    }
+    
+    footer{
+        height:13em;
+    }
+}
+
+
+@media (max-width:570px){
+    
+    footer{
+        height:15em;
+    }
 }
 

@@ -353,8 +353,12 @@ footer > div{
     align-items: center;
     display:flex;
     flex-wrap: wrap;
-    flex-basis: 20%;
-    
+    flex-basis: 20%;  
+}
+
+footer div > a:hover{
+    text-decoration: none;
+    color:lightgray; 
 }
 
 footer > div h5{
