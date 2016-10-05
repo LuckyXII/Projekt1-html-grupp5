@@ -7,8 +7,9 @@
 
 
 #header, #menu, #main1, #main2, #main3, #main4,#main5 {
-    border: 2px solid black;
-    background-color: red;
+    border: 8px solid rgba(211, 211, 211, 0.7);
+    border-radius: 8px;
+    
 }
 
 #menu, #main1, #main2, main5 {
@@ -41,6 +42,7 @@
    flex-grow: 1;
     height: 55px;
     font-weight: bold;
+    margin-top: 10px;
     
     
 }
@@ -172,8 +174,11 @@ footer > div {
 /*pictures*/
 
 body {
-    background-image: url(blogback.jpeg);
-    background-repeat:round;
+    background-image: url(nature-forest-trees-path.jpeg);
+    background-size: auto;
+    background-attachment: scroll;
+    background-repeat: round;
+    
 }
 
 #header {
@@ -570,4 +575,8 @@ ul > button {
 
 .slides {
     z-index: 1;
+}
+@media (max-width: 200px) {
+    body {
+        background-image: url(seamless.jpg)
 }
