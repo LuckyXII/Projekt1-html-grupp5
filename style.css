@@ -6,13 +6,13 @@
 
 *{font-family:'Lobster', cursive; }
 
-#header, #menu, #main1, #main2, #main3, #main4,#main5, footer{
+#header, #menu, #main1, #main2, #main3, #main4,#main5 {
     border: 2px solid black;
     background-color: red;
    
 }
 
-#menu, #main1, #main2, main5, footer {
+#menu, #main1, #main2, main5 {
     
     justify-content: center;
     
@@ -41,6 +41,7 @@
 #main1 {
    flex-grow: 1;
     height: 55px;
+    font-weight: bold;
     
     
 }
@@ -148,11 +149,12 @@ div.desc {
 
 
 #header {
-    background-image: url("https://github.com/LuckyXII/Projekt-html-grupp5/blob/master/4K_logo_lighter.png?raw=true");
+    background-image: url("https://github.com/LuckyXII/Projekt1-html-grupp5/blob/master/4K_logo_lighter.png?raw=true");
     background-repeat: no-repeat;
     background-position: left;
     background-size: 540px;
     background-color: #A4C468;
+    font-weight: bold;
     
 }
 
@@ -308,20 +310,78 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
     background-color: #9caf74;
 }
 
-#footer {
-    background-color: #9caf74;
-    color: #3b3128;
-    
-    
+/*x*/
+
+footer{
+   position:relative;
+   bottom:0px;
+   display:flex;
+   flex-wrap: wrap;
+   justify-content: space-around;  
+   background-color: #A4C468 ;
+   flex-basis: 100%;
+   border-radius:5px;
+   height: 12em;
+   margin-top: 32px;
+   border-top: 5px solid lightgray;
+   border-right: 5px solid lightgray;
+   border-left: 5px solid lightgray;
+   order:3;
 }
 
-/*text footer*/
 
-#customer {
-    text-align: center;
-    flex-direction: row;
-    margin-left: 34%
+div a{
+   list-style: none;
+   text-decoration: none;
+   color: white;
+   font-family: 'Poiret One', cursive;
+   font-size: 18px;
+
 }
+
+ 
+#copyRight{
+   display:flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   flex-basis: 100%;
+   justify-content: center;
+   color: white;
+}
+
+ 
+footer > div{
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   flex-basis: 20%;  
+}
+
+footer div > a:hover{
+   text-decoration: none;
+   color:lightgray; 
+}
+
+footer > div h5{
+   display:block;
+   color:black;
+   flex-direction: row;
+   height:30px;
+   width:100%;
+   text-align: left;
+   margin:0px;
+   font-family: 'Poiret One', cursive;
+   font-weight: bold;
+   
+}
+
+
+
+
+/*x*/
+
+
+
 
 /*menu*/
 
@@ -382,7 +442,7 @@ li :hover {
 
 
 .dropdowncon a {
-    color: black;
+    color: red;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
