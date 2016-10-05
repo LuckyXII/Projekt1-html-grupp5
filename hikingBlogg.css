@@ -133,7 +133,9 @@ li{
     padding:0px !important; /* two classes and one ID calling for 0px padding and I still had to make it imp */
 }
 
-
+#transparency {
+    background-color: rgba (192, 192, 192, 0.4) !important;
+}
 
 .latestPost img{
     width:100%;
