@@ -28,6 +28,10 @@ nav{
     flex-basis: 100%;
 }
 
+input{
+    color:gray;
+}
+
 #flexheader > h3{
     background-color: lightgray;
     border-top: 4px solid lightgray;
@@ -39,6 +43,7 @@ nav{
     opacity: 0.8;
     font-family: 'Poiret one', fantasy;
     padding-left:10px; padding-right:10px;
+    color: black;
     margin:2px;
 }
 #flexheader {
@@ -81,7 +86,8 @@ form{
 
 #logInNav label{
     font-family: 'Poiret One', serif;
-   color:black;
+    color:black;
+
 }
 
 #forumNav{
@@ -94,7 +100,7 @@ form{
 
 #forumNav > div{
     cursor: pointer;
-    border:1px solid gray;
+    border:1px solid #A0A0A0;
     width:122px;
     height:40px;
     border-radius: 3px;
@@ -159,6 +165,8 @@ form{
     height:100%;
     text-align: center;
     font-size: 1em;
+    color:#808080;
+    font-weight: bold;
     font-family: 'Poiret One', serif;
     background-color: lightgray;
     opacity: 1;
@@ -181,23 +189,27 @@ form{
     position: absolute;
     min-width: 120px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    top:40px;
+    top:0px;
     z-index: 1;
     background-color: lightGray;
     
 }
 
+
 /* Links inside the dropdown */
 .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
+    color: gray;
+    font-weight: bold;
     text-decoration: none;
-    display: block;
+    font-size: 0.8em;
+    
+  
 }
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-    background-color: #f1f1f1}
+    background-color: RGBA(192,192,192,1);
+}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
@@ -206,7 +218,7 @@ form{
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color: #A0A0A0;
 }
 
 
@@ -216,13 +228,14 @@ form{
 
 
 .thread{
-    border:0.5px solid olive;
+    border:0.5px solid #798E4D;
     display:flex;
     background-color: #A4C468;
     height: 50px;
     flex-direction: row;
     flex-basis: 100%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-bottom: 1px;
 }
 
 #brXS{
@@ -245,26 +258,29 @@ form{
 }
 
 #forumHead{
-    background-color: lightGray;
+    background-color: RGBA(200, 200,200,0.4);
     flex-direction: row;
     order:2;
     flex-basis:40%;
     height:30px;
     margin-bottom:2px;
     flex-wrap: wrap;
-    opacity: 0.9;
+    
+    
 }
 
 #forumHead h3{
     margin:2px;
     font-family: 'Poiret One', cursive;
     font-weight: bolder;
-    opacity: 1;
     margin:2px;
+    color: RGBA(0,0,0,0.4);
+    text-align: center;
 }
 
 .subForum > h3{
     margin:2px;
+    color: #808080;
     font-family: 'Poiret One', cursive;
     font-weight: bolder;
     margin-top:2px;
@@ -304,7 +320,7 @@ footer{
     width:100%;
 }
 
-li, a{
+div, a{
     list-style: none;
     text-decoration: none;
     color: white;
@@ -343,6 +359,7 @@ footer > div{
 
 footer > div h5{
     display:block;
+    color:black;
     flex-direction: row;
     height:30px;
     width:100%;
@@ -358,6 +375,7 @@ footer > div h5{
     width:8px;
     flex-grow: 1;
     padding:5px;
+    border-right: 1px solid olive;
 }
 
 .threadTitle{
@@ -365,6 +383,7 @@ footer > div h5{
     width:300px;
     flex-grow: 60;
     padding:5px;
+    border-right: 1px solid olive;
 }
 
 .author{
@@ -372,6 +391,7 @@ footer > div h5{
     width:80px;
     flex-grow: 10;
     padding:5px;
+    border-right: 1px solid olive;
 }
 
 .latestPost{
@@ -379,6 +399,7 @@ footer > div h5{
     flex-flow: 15;
     width:90px;
     padding:5px;
+    border-right: 1px solid olive;
 }
 
 .nrPosts{
@@ -477,6 +498,7 @@ footer > div h5{
         width:200px;
         flex-grow: 60;
         padding:5px;
+        
     }
 }
 
