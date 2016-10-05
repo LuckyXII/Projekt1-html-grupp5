@@ -42,8 +42,10 @@ li{
 }
 
 .anchor{
+    color:darkGray;
     text-decoration: none;
-    color:gray;
+    font-family: 'Poiret One', cursive;
+    font-weight: bolder;
 }
 
 .anchor:hover{
@@ -51,6 +53,7 @@ li{
     color:gray;
     border:1px solid lightGray;
     border-radius: 3px;
+    
 }
 
 .popAnchor{
@@ -66,7 +69,7 @@ li{
 
 
 .headingStyle{
-    font-family:serif;
+    font-family:'Poiret One', cursive;
 }
 
 
@@ -91,10 +94,11 @@ li{
        
 }
 
-.subText{
+.text-center .subText{
     font-size: 14px;
     color:Gray;
     padding:1px;
+
 }
 
 
@@ -168,15 +172,28 @@ li{
 
 
 footer{
-    background-color: #F0F0F0;
+    background-color: #A4C468;
     height:11em;
+}
+
+footer div > h5{
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+}
+
+footer div .anchor{
+    text-decoration: none;
+    color:white;
+    font-family: 'Poiret One', cursive;
 }
 
 #bottomPad{
     padding-bottom: 50px;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
+
 }
+
 
 #bottomRadius{
     border-bottom-left-radius: 3px;
@@ -203,7 +220,7 @@ footer{
 
 #harambe{
     font-size: 9px;
-    color:gray;
+    color:white;
 }
 
 
