@@ -1,48 +1,49 @@
 
-html, body , #flexPage{
+html, body{
     height:100%;
 }
 body {
     background-image: url(blogback2.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 
-.flexContainer{
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-     
-}
 
 header{
     order:1;
     display:flex;
     position:relative;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
    
 }
+
 
 nav{
     flex-direction: row;
     flex-basis: 100%;
 }
 
-#pageheader {
+input{
+    color:gray;
+}
+
+#flexheader > h3{
     background-color: lightgray;
     border-top: 4px solid lightgray;
     border-bottom: 4px solid lightgray;
     border-radius: 4px;
     position: relative;
     justify-content: center;
-    flex-shrink: 1 1 auto;
     opacity: 0.8;
     font-family: 'Poiret one', fantasy;
     padding-left:10px; padding-right:10px;
+    color: black;
+    margin:2px;
 }
 #flexheader {
     display: inline-flex;
-    position: sticky;
     justify-content: center;
     width: 100%;
 }
@@ -51,7 +52,9 @@ nav{
     height:120px;
     width:100%;
     background-color: #A4C468;
-    border-bottom: 10px solid lightgray; border-left: 10px solid lightgray; border-right: 10px solid lightgray;
+    border-bottom: 5px solid lightgray;
+    border-left: 5px solid lightgray;
+    border-right: 5px solid lightgray;
     border-radius: 5px;
 }
 #logo img{
@@ -66,36 +69,34 @@ nav{
 #logInNav{
     display:flex;
     flex-direction: row;
-    justify-content: flex-end;
     align-items: center;
-    height:150px;
-    flex-basis: 100%; 
+    justify-content: flex-end;
+    height:110px; 
 }
 
 form{
-     padding:20px;
+    padding:20px;
+    align-items: flex-end;
 }
 
-#logInNav > h3{
-    display:inline-flex;
-    flex-basis: 80%;
-    
+
+#logInNav label{
+    font-family: 'Poiret One', serif;
+    color:black;
+
 }
 
 #forumNav{
     display:flex;
     height:60px;
-    width:100%;
+    flex-basis: 80%;
     align-items: center;
-    position: static;
-    margin-left: 150px;
-    margin-right: 150px;
     position: relative;
 }
 
 #forumNav > div{
     cursor: pointer;
-    border:1px solid gray;
+    border:1px solid #A0A0A0;
     width:122px;
     height:40px;
     border-radius: 3px;
@@ -160,16 +161,19 @@ form{
     height:100%;
     text-align: center;
     font-size: 1em;
+    color:#808080;
+    font-weight: bold;
     font-family: 'Poiret One', serif;
     background-color: lightgray;
     opacity: 1;
     font-weight: 800;
+    border-radius: 2px;
    
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
-    position: absolute;
+   position: relative;
     display: inline-block;
     margin-left: 36px;
     margin-right: 16px;
@@ -181,23 +185,27 @@ form{
     position: absolute;
     min-width: 120px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    top:40px;
+    top:0px;
     z-index: 1;
     background-color: lightGray;
     
 }
 
+
 /* Links inside the dropdown */
 .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
+    color: gray;
+    font-weight: bold;
     text-decoration: none;
-    display: block;
+    font-size: 0.8em;
+    
+  
 }
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-    background-color: #f1f1f1}
+    background-color: RGBA(192,192,192,1);
+}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
@@ -206,7 +214,7 @@ form{
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color: #A0A0A0;
 }
 
 
@@ -216,14 +224,19 @@ form{
 
 
 .thread{
+    border:0.5px solid #798E4D;
     display:flex;
     background-color: #A4C468;
     height: 50px;
     flex-direction: row;
     flex-basis: 100%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-bottom: 1px;
 }
 
+#brXS{
+    display:none;
+}
 
 .thread > div{
     display:flex;
@@ -241,27 +254,33 @@ form{
 }
 
 #forumHead{
-    background-color: lightGray;
+    background-color: RGBA(200, 200,200,0.4);
     flex-direction: row;
     order:2;
     flex-basis:40%;
     height:30px;
-    margin:0px;
+    margin-bottom:2px;
     flex-wrap: wrap;
-    opacity: 0.9;
+    
+    
 }
 
 #forumHead h3{
     margin:2px;
     font-family: 'Poiret One', cursive;
     font-weight: bolder;
-    opacity: 1;
+    margin:2px;
+    color: RGBA(0,0,0,0.4);
+    text-align: center;
 }
 
 .subForum > h3{
     margin:2px;
+    color: #808080;
     font-family: 'Poiret One', cursive;
     font-weight: bolder;
+    margin-top:2px;
+    margin-bottom: 2px;
 }
 
 main{
@@ -276,19 +295,19 @@ main{
 
 
 footer{
-    position:fixed;
+    position:relative;
     bottom:0px;
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;  
     background-color: #A4C468;
-    border-top: 10px solid lightgray;
-    width: 98%;
+    flex-basis: 100%;
     border-radius:5px;
     height: 12em;
     margin-top: 32px;
-    border-right: 10px solid lightgray;
-    border-left: 10px solid lightgray;
+    border-top: 5px solid lightgray;
+    border-right: 5px solid lightgray;
+    border-left: 5px solid lightgray;
     order:3;
 }
 
@@ -297,7 +316,7 @@ footer{
     width:100%;
 }
 
-li, a{
+div, a{
     list-style: none;
     text-decoration: none;
     color: white;
@@ -308,6 +327,8 @@ section{
     flex-direction: row;
     flex-wrap: wrap;
     flex-grow: 90;
+    background-color: RGBA(180,180,180,0.5);
+    border-radius: 4px;
 }
 
 aside{
@@ -328,12 +349,17 @@ footer > div{
     align-items: center;
     display:flex;
     flex-wrap: wrap;
-    flex-basis: 20%;
-    
+    flex-basis: 20%;  
+}
+
+footer div > a:hover{
+    text-decoration: none;
+    color:lightgray; 
 }
 
 footer > div h5{
     display:block;
+    color:black;
     flex-direction: row;
     height:30px;
     width:100%;
@@ -349,6 +375,7 @@ footer > div h5{
     width:8px;
     flex-grow: 1;
     padding:5px;
+    border-right: 1px solid olive;
 }
 
 .threadTitle{
@@ -356,6 +383,7 @@ footer > div h5{
     width:300px;
     flex-grow: 60;
     padding:5px;
+    border-right: 1px solid olive;
 }
 
 .author{
@@ -363,6 +391,7 @@ footer > div h5{
     width:80px;
     flex-grow: 10;
     padding:5px;
+    border-right: 1px solid olive;
 }
 
 .latestPost{
@@ -370,6 +399,7 @@ footer > div h5{
     flex-flow: 15;
     width:90px;
     padding:5px;
+    border-right: 1px solid olive;
 }
 
 .nrPosts{
@@ -390,6 +420,14 @@ footer > div h5{
 
 .formatInput{
     display:block;   
+}
+
+#forumNav{
+    display:flex;
+    flex-wrap: wrap;
+    border:1px solid lightGray;
+    border-radius: 3px;
+    background-color: RGBA(200, 200, 200,0.8);
 }
 
 #forumNav > #separator{
@@ -418,7 +456,7 @@ footer > div h5{
         height:100px;
         flex-basis: 100%; 
         justify-content: flex-start;
-        
+        height:80px;
     }
     
     form{
@@ -446,7 +484,7 @@ footer > div h5{
     #forumNav{
         display:flex;
         flex-wrap: wrap;
-            
+           
     }
     
     #forumNav > div{
@@ -460,6 +498,7 @@ footer > div h5{
         width:200px;
         flex-grow: 60;
         padding:5px;
+        
     }
 }
 
@@ -468,25 +507,29 @@ footer > div h5{
         display:block;
     }
     
+    #forumNav{
+        height:100px;
+    }
+    
+    aside{
+        display:none;
+    }
+    
     section{
         margin-top: 30px;
     }
     
-    footer{
-        width:96%;
-    }
+
 }
 
 @media (max-width:510px){
-    aside{
-        display:none;
+    
+    #brXS{
+        display:block;
     }
     
     #forumNav{
         margin-top: 10px;
     }
-    
-    footer{
-        width:92%;
-    }
+
 }

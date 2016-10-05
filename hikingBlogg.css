@@ -42,15 +42,15 @@ li{
 }
 
 .anchor{
+    color:darkGray;
     text-decoration: none;
-    color:gray;
+    font-family: 'Poiret One', cursive;
+    font-weight: bolder;
 }
 
 .anchor:hover{
     text-decoration: none;
-    color:gray;
-    border:1px solid lightGray;
-    border-radius: 3px;
+    color:lightgray; 
 }
 
 .popAnchor{
@@ -66,7 +66,9 @@ li{
 
 
 .headingStyle{
-    font-family:serif;
+    font-family:'lobster', cursive;
+    color:#505050;
+
 }
 
 
@@ -91,10 +93,11 @@ li{
        
 }
 
-.subText{
+.text-center .subText{
     font-size: 14px;
     color:Gray;
     padding:1px;
+
 }
 
 
@@ -116,8 +119,8 @@ li{
 
 
 .decorativeLine{
-   
-    width: 100%; 
+    display:block;
+    width: 96%; 
     height:1px; 
     background: #826142; 
     overflow: hidden;
@@ -137,17 +140,23 @@ li{
     height:200px;
 }
 
+.latestPost p{
+    font-family: 'Poiret One', cursive;
+    font-size: 1.5em;
+}
+
 .navTxt{
     display:inline-block;
     position:relative;
-    color:beige;
+    color:white;
     font-weight: bold;
     font-size: 32px;
     text-shadow:
     -1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
-    1px 1px 0 #000;  
+    1px 1px 0 #000; 
+    font-family: 'lobster', cursive;
    
 }
 
@@ -168,15 +177,29 @@ li{
 
 
 footer{
-    background-color: #F0F0F0;
+    border-top: 3px solid darkGray;
+    background-color: #A4C468;
     height:11em;
+}
+
+footer div > h5{
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+}
+
+footer div .anchor{
+    text-decoration: none;
+    color:white;
+    font-family: 'Poiret One', cursive;
 }
 
 #bottomPad{
     padding-bottom: 50px;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
+
 }
+
 
 #bottomRadius{
     border-bottom-left-radius: 3px;
@@ -191,6 +214,9 @@ footer{
     padding:0px;
 }
 
+#logInBtn{
+    color:gray;
+}
 
 .navPic{
     display:flex;
@@ -202,8 +228,12 @@ footer{
 
 
 #harambe{
+    position:relative;
     font-size: 9px;
-    color:gray;
+    color:white;
+    display:block;
+    height:20px;
+    text-align: center;
 }
 
 
@@ -238,5 +268,30 @@ footer{
 #navPicFive{
     background-image: url("http://image.shutterstock.com/display_pic_with_logo/140251/256750474/stock-photo-traveling-tourism-tourist-tent-camping-in-desert-256750474.jpg");
     height:200px;   
+}
+
+@media (max-width:570px){
+    footer{
+        height:12em;
+    }
+}
+
+@media (max-width:570px){
+    
+    #logo, #logo img{
+        height:120px;
+    }
+    
+    footer{
+        height:13em;
+    }
+}
+
+
+@media (max-width:570px){
+    
+    footer{
+        height:15em;
+    }
 }
 

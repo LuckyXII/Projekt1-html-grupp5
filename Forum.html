@@ -3,7 +3,8 @@
 
     <head>
         <title>Nordic Trekk Forum</title>
-        <meta charset="utf-8" content="width=device-width initial-scale=1" >
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1">
         <link type="text/css" rel="stylesheet" href="Forum.css">
         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
@@ -12,31 +13,41 @@
     </head>
 
     
-    <body class="flexContainer">
+  
         
-        <div id="flexPage">
         
             <!-- Header -->
             <header>
                 <!-- Logo -->
-                <div id="logo"><img src="https://github.com/LuckyXII/Projekt-html-grupp5/blob/master/4K_logo_lighter.png?raw=true" alt="Nordic Trekk Logo"></div>
+                <div id="logo"><img src="https://github.com/LuckyXII/Projekt1-html-grupp5/blob/master/4K_logo_lighter.png?raw=true" alt="Nordic Trekk Logo"></div>
                 
-                <!-- Navigation -->
-                <nav>
-                    <!-- Log In -->
-                    <div id="logInNav">
-                        <div id="flexheader"><h3 id="pageheader">Discover the community and share your experiences!</h3></div>
+                    <div id="flexheader"><h3>Discover the community and share your experiences!</h3></div>
+              
+            </header>
+            <!-- END Header -->
+            
+            <!-- Main -->
+            <main>
+                
+                <!-- Empty sideBar -->
+                <aside></aside>
+                
+                <section>
+                    <!-- Navigation -->
+                     <!-- Log In -->
+                 <div id="logInNav">
+                        <div id="test"></div>
                         <form>
                             <label>Log In<br></label>
                             <input type="email" name="logInID" id="logInID" placeholder="E-mail" class="formatInput" >
-                            <input type="password" name="ligInPw" id="logInPw" placeholder="Password" class="formatInput" >
+                            <input type="password" name="ligInPw" id="logInPw" placeholder="Password" class="formatInput" ><br id=brXS>
                             <input type="checkbox" name="rememberMe" id="rememberMe"><label for="rememberMe">Remember Me.<br class="formatInput"></label>
                             <input type="button" name="logInBtn" id="logInBtn" value="Log In">
                             <input type="button" name="registerID" id="registerID" value="Register">
                         </form>
-                    </div>
-                    <!-- Forum Navigation Btns -->
-                    <div  id="forumNav">
+                    </div>   
+                     <!-- Forum Navigation Btns -->
+                <div  id="forumNav">
                         <div class="dropdown">
                             <div class="dropbtn">Forum</div>
                             <!-- DropDown -->
@@ -145,21 +156,6 @@
 
                         
                     </div>
-                </nav>
-                
-                
-                
-                
-            </header>
-            <!-- END Header -->
-            
-            <!-- Main -->
-            <main>
-                
-                <!-- Empty sideBar -->
-                <aside></aside>
-                
-                <section>
                     <div id="forumHead">
                         <div><h3>Forum</h3></div>
                     </div>
@@ -236,7 +232,8 @@
                 <div class="sideBar"></div>
             </main>
             <!-- END Main -->
-                <footer>
+               
+        <footer>
 
 
                 <div> 
@@ -308,13 +305,12 @@
 
 
                 <div id="copyRight">
-                    <p id="harambae">&#169; Trekking For Harambe</p>
+                    <p>&#169; Trekking For Harambe</p>
                 </div>
 
             </footer>
-        
-        </div>
-        
+   
+         
         
     </body>
 

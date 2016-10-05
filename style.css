@@ -5,10 +5,10 @@
 /*template flexbox model*/
 
 
-#header, #menu, #main1, #main2, #main3, #main4,#main5{
-    
-    
-   
+
+#header, #menu, #main1, #main2, #main3, #main4,#main5 {
+    border: 2px solid black;
+    background-color: red;
 }
 
 #menu, #main1, #main2, main5 {
@@ -40,6 +40,7 @@
 #main1 {
    flex-grow: 1;
     height: 55px;
+    font-weight: bold;
     
     
 }
@@ -158,16 +159,6 @@ footer > div {
     width:100%;
 }
 
-footer{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-around;  
-    background-color: #A4C468;
-    border-top: 10px solid lightgray;
-    border-bottom: 10px solid lightgray;
-    
-}
-
 #copyRight{
     display:flex;
     flex-wrap: wrap;
@@ -186,20 +177,21 @@ body {
 }
 
 #header {
-    background-image: url("https://github.com/LuckyXII/Projekt-html-grupp5/blob/master/4K_logo_lighter.png?raw=true");
+    background-image: url("https://github.com/LuckyXII/Projekt1-html-grupp5/blob/master/4K_logo_lighter.png?raw=true");
     background-repeat: no-repeat;
     background-position: left;
     background-size: 540px;
     background-color: #A4C468;
+    font-weight: bold;
     
 }
 
-#main2 {
+/*#main2 {
  
 
     background-repeat: no-repeat;
     background-size: 100% 100%;
-}
+}*/
 
 .slides {
     padding: 0;
@@ -239,29 +231,23 @@ body {
 	-moz-transform: translate(100%, 0px);
 	-o-transform: translate(100%, 0px);
 	-ms-transform: translate(100%, 0px);
-
     /*transition: all .7s ease-in-out;*/
 	-webkit-transition: all .8s cubic-bezier(0.98, 0.01, 0.75, 1);
     -moz-transition: all .8s cubic-bezier(0.98, 0.01, 0.75, 1);
     -o-transition: all .8s cubic-bezier(0.98, 0.01, 0.75, 1);
     transition: all .8s cubic-bezier(0.98, 0.01, 0.75, 1);
 }
-li, a{
+div a{
     list-style: none;
     text-decoration: none;
     color: white;
     font-family: 'Poiret One', cursive;
     font-size: 18px;
-
-}
-
-#harambae {
-    font-family: 'Poiret One', cursive;
 }
 
 .slide img {
     width: 100%;
-    height: auto;
+    height: 100%;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -366,16 +352,78 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 
 
     
-    
+/*x*/
+
+footer{
+   position:relative;
+   bottom:0px;
+   display:flex;
+   flex-wrap: wrap;
+   justify-content: space-around;  
+   background-color: #A4C468 ;
+   flex-basis: 100%;
+   border-radius:5px;
+   height: 12em;
+   margin-top: 32px;
+   border-top: 5px solid lightgray;
+   border-right: 5px solid lightgray;
+   border-left: 5px solid lightgray;
+   order:3;
 }
 
-/*text footer*/
 
-#customer {
-    text-align: center;
-    flex-direction: row;
-    margin-left: 34%
+div a{
+   list-style: none;
+   text-decoration: none;
+   color: white;
+   font-family: 'Poiret One', cursive;
+   font-size: 18px;
+
 }
+
+ 
+#copyRight{
+   display:flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   flex-basis: 100%;
+   justify-content: center;
+   color: white;
+}
+
+ 
+footer > div{
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   flex-basis: 20%;  
+}
+
+footer div > a:hover{
+   text-decoration: none;
+   color:lightgray; 
+}
+
+footer > div h5{
+   display:block;
+   color:black;
+   flex-direction: row;
+   height:30px;
+   width:100%;
+   text-align: left;
+   margin:0px;
+   font-family: 'Poiret One', cursive;
+   font-weight: bold;
+   
+}
+
+
+
+
+/*x*/
+
+
+
 
 /*menu*/
 
