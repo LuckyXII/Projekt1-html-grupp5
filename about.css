@@ -169,7 +169,7 @@ div p {
     display: block;
     min-height: 185px;
 }
-div, a{
+div a{
     list-style: none;
     text-decoration: none;
     color: white;
@@ -190,6 +190,11 @@ h2 {
     flex-basis: 100%;
     justify-content: center;
     color: white;
+    font-family: 'Poiret One', cursive;
+}
+
+#copyRight p{
+    font-family: 'Poiret One', cursive;
 }
 
 #logo {
@@ -197,9 +202,7 @@ h2 {
     order: 2;
     
 }
-#harambae {
-    font-family: 'Poiret One', cursive;
-}
+
 .companypic {
     background-attachment: fixed;
     background-position: center;
@@ -255,18 +258,18 @@ h2 {
     height: 100px;
     order: 2;
 }
-.pic > #profilepics > img {
+.pic > .profilepics > img {
     height: 250px;
     width: 250px;
     border-radius: 200px;
     margin-left: 15px; margin-right: 15px;
 }
-.pic > #profilepics {
+.pic > .profilepics {
     display: inline-block;
     height: 280px;
     margin-bottom: 24px;
 }
-#profilepics > p {
+.profilepics > p {
     display: block;
     font-size: 20px;
     font-family: 'Poiret one', fantasy;
@@ -330,13 +333,13 @@ h2 {
         font-weight: 700;
         font-size: 24px;
     }
-    .pic > #profilepics > img {
+    .pic > .profilepics > img {
     height: 120px;
     width: 120px;
     border-radius: 200px;
     margin-left: 15px; margin-right: 15px;
     }
-    .pic > #profilepics {
+    .pic > .profilepics {
     display: inline-block;
     height: 160px;
     }
@@ -355,13 +358,13 @@ h2 {
     
 }
 @media (max-width: 340px) {
-    .pic > #profilepics > img {
+    .pic > .profilepics > img {
     height: 80px;
     width: 80px;
     border-radius: 200px;
     margin-left: 15px; margin-right: 15px;
     }  
-    .pic > #profilepics {
+    .pic > .profilepics {
     display: inline-block;
     height: 120px;
         
