@@ -1,0 +1,492 @@
+
+html, body , #flexPage{
+    height:100%;
+}
+body {
+    background-image: url(blogback2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.flexContainer{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+     
+}
+
+header{
+    order:1;
+    display:flex;
+    position:relative;
+    flex-wrap: wrap;
+   
+}
+
+nav{
+    flex-direction: row;
+    flex-basis: 100%;
+}
+
+#pageheader {
+    background-color: lightgray;
+    border-top: 4px solid lightgray;
+    border-bottom: 4px solid lightgray;
+    border-radius: 4px;
+    position: relative;
+    justify-content: center;
+    flex-shrink: 1 1 auto;
+    opacity: 0.8;
+    font-family: 'Poiret one', fantasy;
+    padding-left:10px; padding-right:10px;
+}
+#flexheader {
+    display: inline-flex;
+    position: sticky;
+    justify-content: center;
+    width: 100%;
+}
+
+#logo{
+    height:120px;
+    width:100%;
+    background-color: #A4C468;
+    border-bottom: 10px solid lightgray; border-left: 10px solid lightgray; border-right: 10px solid lightgray;
+    border-radius: 5px;
+}
+#logo img{
+    height:120px;
+
+}
+
+#searchDiv{
+  padding:0px;
+}
+
+#logInNav{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height:150px;
+    flex-basis: 100%; 
+}
+
+form{
+     padding:20px;
+}
+
+#logInNav > h3{
+    display:inline-flex;
+    flex-basis: 80%;
+    
+}
+
+#forumNav{
+    display:flex;
+    height:60px;
+    width:100%;
+    align-items: center;
+    position: static;
+    margin-left: 150px;
+    margin-right: 150px;
+    position: relative;
+}
+
+#forumNav > div{
+    cursor: pointer;
+    border:1px solid gray;
+    width:122px;
+    height:40px;
+    border-radius: 3px;
+    margin-right: 10px;
+    margin-left:10px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+}
+
+/* DROP */
+
+/* Dropdown Button */
+.dropbtn {
+    cursor: pointer;
+    height:100%;
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Poiret One', serif;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    top:40px;
+    z-index: 1;
+    background-color: lightGray;
+    
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    align-items: center;
+    position: relative;
+}
+
+/* DROP */
+
+/* Dropdown Button */
+.dropbtn {
+    cursor: pointer;
+    height:100%;
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Poiret One', serif;
+    background-color: lightgray;
+    opacity: 1;
+    font-weight: 800;
+   
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: absolute;
+    display: inline-block;
+    margin-left: 36px;
+    margin-right: 16px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    top:40px;
+    z-index: 1;
+    background-color: lightGray;
+    
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+
+
+
+/* DROPP END*/
+
+
+.thread{
+    display:flex;
+    background-color: #A4C468;
+    height: 50px;
+    flex-direction: row;
+    flex-basis: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+.thread > div{
+    display:flex;
+    margin:auto;
+    position:relative;
+    background-color: #A4C468;
+    align-items: center;
+}
+
+.subForum{
+   flex-wrap: wrap;
+    flex-direction: row;
+    background-color: lightGray;
+    opacity: 0.9;
+}
+
+#forumHead{
+    background-color: lightGray;
+    flex-direction: row;
+    order:2;
+    flex-basis:40%;
+    height:30px;
+    margin:0px;
+    flex-wrap: wrap;
+    opacity: 0.9;
+}
+
+#forumHead h3{
+    margin:2px;
+    font-family: 'Poiret One', cursive;
+    font-weight: bolder;
+    opacity: 1;
+}
+
+.subForum > h3{
+    margin:2px;
+    font-family: 'Poiret One', cursive;
+    font-weight: bolder;
+}
+
+main{
+    order:2;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height:60%;
+    
+}
+
+
+
+footer{
+    position:fixed;
+    bottom:0px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;  
+    background-color: #A4C468;
+    border-top: 10px solid lightgray;
+    width: 98%;
+    border-radius:5px;
+    height: 12em;
+    margin-top: 32px;
+    border-right: 10px solid lightgray;
+    border-left: 10px solid lightgray;
+    order:3;
+}
+
+.footerDiv{
+    display:block;
+    width:100%;
+}
+
+li, a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-family: 'Poiret One', cursive;
+}
+
+section{
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 90;
+}
+
+aside{
+    flex-grow: 30;
+    flex-direction: column;
+}
+
+
+.sideBar{
+    width:auto;
+    display:flex;
+    flex-direction: column;
+    flex-grow: 30;
+}
+
+footer > div{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    flex-wrap: wrap;
+    flex-basis: 20%;
+    
+}
+
+footer > div h5{
+    display:block;
+    flex-direction: row;
+    height:30px;
+    width:100%;
+    text-align: left;
+    margin:0px;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    
+}
+
+.icon{
+    height:30px;
+    width:8px;
+    flex-grow: 1;
+    padding:5px;
+}
+
+.threadTitle{
+    height:30px;
+    width:300px;
+    flex-grow: 60;
+    padding:5px;
+}
+
+.author{
+     height:30px;
+    width:80px;
+    flex-grow: 10;
+    padding:5px;
+}
+
+.latestPost{
+    height:30px;
+    flex-flow: 15;
+    width:90px;
+    padding:5px;
+}
+
+.nrPosts{
+     height:30px;
+    flex-flow: 5;
+    padding:5px;
+}
+
+#copyRight{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-basis: 100%;
+    justify-content: center;
+    color: white;
+    height: 10%;
+}
+
+.formatInput{
+    display:block;   
+}
+
+#forumNav > #separator{
+    border:none;
+    display:none;
+    flex-basis: 100%;
+    flex-direction: row;
+    flex: 1 1 auto;
+    width:100%;
+    box-shadow: none;
+    background-color: none;
+    height:2px;
+}
+
+/* MEDIA 930px and below */
+@media (max-width:930px){
+    
+    div .dropbtn{
+        margin:0px;
+    }
+   
+    #logInNav{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height:100px;
+        flex-basis: 100%; 
+        justify-content: flex-start;
+        
+    }
+    
+    form{
+        flex-direction: row;
+        flex-basis: 100%;
+        padding:2px;
+        
+    }
+    
+    #logInNav > h3{
+        flex-basis: 100%;
+        margin:2px;
+    }
+    
+    .formatInput{
+        display:inline-block;
+    }
+    
+    #searchDiv{
+       flex-basis:0;
+        flex-flow: 1;
+    
+    }
+    
+    #forumNav{
+        display:flex;
+        flex-wrap: wrap;
+            
+    }
+    
+    #forumNav > div{
+        flex-grow: 5;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    
+    .threadTitle{
+        height:30px;
+        width:200px;
+        flex-grow: 60;
+        padding:5px;
+    }
+}
+
+@media (max-width:850px){
+   #forumNav > #separator{
+        display:block;
+    }
+    
+    section{
+        margin-top: 30px;
+    }
+    
+    footer{
+        width:96%;
+    }
+}
+
+@media (max-width:510px){
+    aside{
+        display:none;
+    }
+    
+    #forumNav{
+        margin-top: 10px;
+    }
+    
+    footer{
+        width:92%;
+    }
+}

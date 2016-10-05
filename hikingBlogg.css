@@ -1,0 +1,242 @@
+
+body {
+    background-image: url(blogback2.jpg);
+    background-repeat:space;
+    background-size:cover;
+}
+header{
+    background-color:lightGray;
+    margin:0px !important;
+}
+
+.footerList{
+    font-size: 10px;
+    color:gray;
+}
+
+#logInBtn{
+    margin-bottom:10px;
+}
+
+#logo{
+    border:1px solid #577714;
+    height:160px;
+    width:100%;
+    background-color: #A4C468;
+    margin: 0px;
+    padding:0px;
+     
+}
+
+
+#logo img{
+    width:auto;
+    float:left;
+    height:158px;
+    
+}
+
+li{
+    font-size: 14px;
+    color:gray;
+}
+
+.anchor{
+    text-decoration: none;
+    color:gray;
+}
+
+.anchor:hover{
+    text-decoration: none;
+    color:gray;
+    border:1px solid lightGray;
+    border-radius: 3px;
+}
+
+.popAnchor{
+    color:beige;
+    text-decoration: none;
+}
+
+.popAnchor:hover , .popAnchor:focus{
+    text-decoration: none;
+    color:beige;
+    background-color: red;
+}
+
+
+.headingStyle{
+    font-family:serif;
+}
+
+
+.alignCenter{
+    position:relative;
+    display:flex;
+    align-items: center; 
+    justify-content: center;
+    margin:auto;
+    height:20px;
+    width:auto;
+}
+
+
+#mainSec{
+    padding:0px;
+    background-color: #F0F0F0;
+}
+
+.shadowSide{
+    box-shadow: 0px 10px 40px 5px rgba(0,0,0,0.3);
+       
+}
+
+.subText{
+    font-size: 14px;
+    color:Gray;
+    padding:1px;
+}
+
+
+.readMore{
+    border:1px solid lightGray;
+    position:relative;
+    float:right;
+    background-color: lightGray;
+    width:80px;
+    height:25px;
+    border-radius: 3px;
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,0.2);
+        
+}
+.readMore a{
+    text-decoration: none;
+    color:#808080;
+}
+
+
+.decorativeLine{
+   
+    width: 100%; 
+    height:1px; 
+    background: #826142; 
+    overflow: hidden;
+    padding:0px;
+    
+}
+
+#popular{
+    height:1px;
+    padding:0px !important; /* two classes and one ID calling for 0px padding and I still had to make it imp */
+}
+
+
+
+.latestPost img{
+    width:100%;
+    height:200px;
+}
+
+.navTxt{
+    display:inline-block;
+    position:relative;
+    color:beige;
+    font-weight: bold;
+    font-size: 32px;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+   
+}
+
+
+@keyframes popAnimation{
+    0%{top: 0px;}
+    50%{top:15px;}
+    100%{top:0px;}
+    
+}
+
+.navPic:hover{
+    animation-name: popAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transition-timing-function: cubic-bezier(.24,.51,.72,.46);
+}
+
+
+footer{
+    background-color: #F0F0F0;
+    height:11em;
+}
+
+#bottomPad{
+    padding-bottom: 50px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+#bottomRadius{
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+/* Pictures */
+#navPadding div{
+    padding:5px;
+}
+#zeroPadding{
+    padding:0px;
+}
+
+
+.navPic{
+    display:flex;
+    position:relative;
+    background-repeat:no-repeat;
+    background-size: 100%;
+    border: 1px solid lightGray;
+}
+
+
+#harambe{
+    font-size: 9px;
+    color:gray;
+}
+
+
+/* Navigation Row One*/
+
+/*Tips and Trix*/
+#navPicOne{
+    background-image: url("http://image.shutterstock.com/display_pic_with_logo/3312824/382101877/stock-vector-objects-for-camping-tracking-and-hiking-camping-icons-and-hiking-icons-vector-icons-of-relaxing-382101877.jpg");
+    height:300px;   
+}
+
+/* Posts */
+#navPicTwo{
+    background-image: url("http://image.shutterstock.com/display_pic_with_logo/270691/222968578/stock-photo-hiking-trail-with-flowers-222968578.jpg");
+    height:300px;   
+}
+
+/* Navigation Row Two */
+/* Where to travel*/
+#navPicThree{
+    background-image: url("http://image.shutterstock.com/display_pic_with_logo/62698/313668611/stock-photo-hiking-man-in-the-mountains-313668611.jpg");
+    height:200px;   
+}
+
+/* Our best Advice*/
+#navPicFour{
+    background-image: url("http://image.shutterstock.com/display_pic_with_logo/344419/404340322/stock-photo-travel-accessories-set-on-wooden-background-old-hiking-leather-boots-pants-backpack-map-404340322.jpg");
+    height:200px;   
+}
+
+/* Living with nature*/
+#navPicFive{
+    background-image: url("http://image.shutterstock.com/display_pic_with_logo/140251/256750474/stock-photo-traveling-tourism-tourist-tent-camping-in-desert-256750474.jpg");
+    height:200px;   
+}
+

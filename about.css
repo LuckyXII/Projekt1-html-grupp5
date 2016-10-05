@@ -1,0 +1,365 @@
+
+.menucontainer {
+    align-items: center;
+    position: fixed;
+    clear:both;
+    background-color: #A4C468;
+    height: 100px; 
+    width: 100%;
+    z-index: 10;
+    border-bottom: 10px solid #303030;
+    display: flex;
+    
+    
+
+}
+
+#empty{
+    display:block;
+    height:180px;
+    width:100%;
+}
+
+body, html {
+    margin: 0px;
+    padding: 0px;
+}
+.parallax {
+    background-image: url(blogback2.jpg);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.dropbutton {
+    background-color: #212121;
+    color: white;
+    padding: 16px;
+    font-size: 21px;
+    border: none;
+    cursor: pointer;
+    width: 153px;
+    margin-top: 0px;
+    height: 100px;
+    z-index: 5;
+    border-right: 3px solid #303030;
+    order: 1;
+    font-family: 'Lobster', cursive;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.drop-content {
+    display: none;
+    position: absolute;
+    background-color: #212121;
+    min-width: 16px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    width: 150px;
+    z-index: 6;
+    border-right: 3px solid white;
+}
+.drop-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+}
+.dropdown:hover .dropbutton {
+    background-color: #A4C468;
+    border-right-color: white;
+}
+.dropdown:hover .drop-content {
+    display: block;
+}
+a:hover {
+    background-color: #A4C468;
+}
+.mission {
+    font-size: 24px;
+    color: white;
+    width: 95%;
+    align-content: center;
+    text-align: center;
+    top: 100px;
+    margin: 0 auto;
+    display: block;
+    background-color: #212121;
+    border-radius: 10px;
+    border: 10px solid #303030;
+    background: rgba(33, 33, 33, 0.9);
+    max-height: 30em;
+    margin-bottom: 64px;
+    '
+}
+.suckmyasscss {
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    
+}
+
+.aboutgroup {
+    font-size: 24px;
+    color: white;
+    width: 95%;
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #212121;
+    border: 10px solid #303030;
+    border-radius: 10px;
+    top: -50px;
+    background: rgba(33, 33, 33, 0.9);
+    display: block;
+    max-height: 30em;
+    margin-bottom: 64px;
+    min-height: 225px;
+}
+footer > div h5 {
+    display: block;
+    flex-direction: row;
+    height:30px;
+    width:100%;
+    text-align: left;
+    margin:0px;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+}
+
+footer > div {
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    flex-wrap: wrap;
+    flex-basis: 20%;
+}
+
+.footerDiv{
+    display:block;
+    width:100%;
+}
+
+footer{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;  
+    background-color: #A4C468;
+    border-top: 10px solid #303030;
+    border-bottom: 4px solid #303030;
+    
+}
+div p {
+    font-family: fantasy;
+    margin: auto;
+    padding: 0px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+#text {
+    display: block;
+    min-height: 185px;
+}
+li, a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-family: 'Poiret One', cursive;
+    font-size: 18px;
+
+}
+h2 {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    margin-top: 12px;
+}
+
+#copyRight{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-basis: 100%;
+    justify-content: center;
+    color: white;
+}
+
+#logo {
+    height: 100px;
+    order: 2;
+    
+}
+#harambae {
+    font-family: 'Poiret One', cursive;
+}
+.companypic {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(blogback2.jpg);
+    height: 50%;
+}
+.pic {
+    font-size: 24px;
+    color: white;
+    width: 95%;
+    align-content: center;
+    text-align: center;
+    min-height: 225px;
+    margin: 0 auto;
+    display: block;
+    background-color: #212121;
+    border-radius: 10px;
+    border: 10px solid #303030;
+    background: rgba(33, 33, 33, 0.9);
+    max-height: 30em;
+    margin-bottom: 64px;
+    
+}
+.group {
+    background-image: url(blogback2.jpg);
+    height: 75%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#aboutgrouptext {
+    margin: 24px;
+    display: block;
+    font-size: 19px;
+}
+.missiontext {
+    font-size: 19px;
+    margin: 24px;
+    display: block;
+    font-family: 'Oxygen', fantasy;
+}
+.fullcontainer {
+    position: relative;
+}
+#biggericon {
+    display: none;
+}
+#hidelogo {
+    display:none;
+    height: 100px;
+    order: 2;
+}
+.pic > #profilepics > img {
+    height: 250px;
+    width: 250px;
+    border-radius: 200px;
+    margin-left: 15px; margin-right: 15px;
+}
+.pic > #profilepics {
+    display: inline-block;
+    height: 280px;
+    margin-bottom: 24px;
+}
+#profilepics > p {
+    display: block;
+    font-size: 20px;
+    font-family: 'Poiret one', fantasy;
+}
+.decorativeLine{
+   
+    flex-basis: 100%; 
+    height:8px; 
+    background: #826142; 
+    overflow: hidden;
+    padding:0px;
+    margin-right: 550px; margin-left: 550px;
+    border-radius: 200px;
+    background-color: #f1f1f1;
+    
+}
+@media (max-width: 768px) {
+    #showbutton {
+        display: none;
+    }
+    #biggericon {
+        display: inherit;
+        position: absolute;
+        top: 9px;
+        left: 55px;
+        
+    }
+    #smallericon {
+        display: none;
+        
+    }
+    #logo {
+        display: none;
+    }
+    #hidelogo {
+        display: flex;
+        z-index: 4;
+        height: 60px;
+    }
+    .menucontainer {
+        background-color: #A4C468;
+        height: 60px;
+        flex-basis: 100%;
+        z-index: 5;
+        border-right: 10px solid #303030;
+    }
+    .dropbutton {
+        height: 60px;
+        display: block;
+    }
+    .parallax {
+        background-image: url(seamless.jpg)
+    }
+    .companypic {
+        background-image: url(seamless.jpg)
+    }
+    .group {
+        background-image: url(seamless.jpg)
+    }
+    div > a {
+        font-weight: 700;
+        font-size: 24px;
+    }
+    .pic > #profilepics > img {
+    height: 120px;
+    width: 120px;
+    border-radius: 200px;
+    margin-left: 15px; margin-right: 15px;
+    }
+    .pic > #profilepics {
+    display: inline-block;
+    height: 160px;
+    }
+    .missiontext {
+    font-size: 14px;
+    margin: 24px;
+    display: block;
+    font-family: 'Oxygen', fantasy;
+    }
+    .decorativeLine {
+        margin-left: 15px; margin-right: 15px;
+    }
+    .menucontainer {
+        border-top: 10px solid #303030;
+    }
+    
+}
+@media (max-width: 340px) {
+    .pic > #profilepics > img {
+    height: 80px;
+    width: 80px;
+    border-radius: 200px;
+    margin-left: 15px; margin-right: 15px;
+    }  
+    .pic > #profilepics {
+    display: inline-block;
+    height: 120px;
+        
+
+
+
+}
