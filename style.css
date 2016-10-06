@@ -189,6 +189,7 @@ body {
     background-size: 100% 100%;
 }*/
 
+/*slider container attributes*/
 .slides {
     padding: 0;
 	width: 100%;
@@ -199,7 +200,7 @@ body {
 	overflow: hidden;
     z-index: 2;
 }
-
+/*reset selects and inputs*/
 .slides * {
     user-select: none;
     -ms-user-select: none;
@@ -212,7 +213,7 @@ body {
 .slides input { display: none; }
 
 .slide-container { display: block; }
-
+/*slider animation and attributes*/
 .slide {
     top: 0;
     opacity: 0;
@@ -221,18 +222,26 @@ body {
     display: block;
     position: absolute;
 	overflow:hidden;
-    /*transform: scale(0);*/
+/*perform slide left to right*/	
 	transform: translate(100%, 0px);
 	-webkit-transform: translate(100%, 0px);
 	-moz-transform: translate(100%, 0px);
 	-o-transform: translate(100%, 0px);
 	-ms-transform: translate(100%, 0px);
+<<<<<<< HEAD
+
+/*perform an non-linear animation of slide*/
+=======
     /*transition: all .7s ease-in-out;*/
+>>>>>>> 86aafba9bcc66d231ff4da812cfa24ccec93ef4f
 	-webkit-transition: all .8s cubic-bezier(0.98, 0.01, 0.75, 1);
     -moz-transition: all .8s cubic-bezier(0.98, 0.01, 0.75, 1);
     -o-transition: all .8s cubic-bezier(0.98, 0.01, 0.75, 1);
     transition: all .8s cubic-bezier(0.98, 0.01, 0.75, 1);
 }
+<<<<<<< HEAD
+/*slider image attributes*/
+=======
 div a{
     list-style: none;
     text-decoration: none;
@@ -241,6 +250,7 @@ div a{
     font-size: 18px;
 }
 
+>>>>>>> 86aafba9bcc66d231ff4da812cfa24ccec93ef4f
 .slide img {
     width: 100%;
     height: 100%;
@@ -249,6 +259,9 @@ div a{
 	margin-right: auto;
 
 }
+<<<<<<< HEAD
+/*slider arrow attributes*/
+=======
 #maindiv {
     border: 8px solid rgba(30, 30, 30, 0.8);
     margin-left: 5%; margin-right: 5%; margin-top: 24px;
@@ -256,6 +269,7 @@ div a{
     border-radius: 8px;
 }
 
+>>>>>>> 86aafba9bcc66d231ff4da812cfa24ccec93ef4f
 .nav label {
     width: 150px;
     height: 100%;
@@ -284,7 +298,7 @@ div a{
 .nav .next { right: 0; }
 
 
-
+/*ease in next img*/
 input:checked + .slide-container  .slide {
     opacity: 1;
 
@@ -294,7 +308,7 @@ input:checked + .slide-container  .slide {
 }
 
 input:checked + .slide-container .nav label { display: block; }
-
+/*slider navigation dots style and attributes*/
 .nav-dots {
 	width: 100%;
 	bottom: 9px;
@@ -319,7 +333,7 @@ input:checked + .slide-container .nav label { display: block; }
 	cursor: pointer;
 	background-color: #743700;
 }
-
+/*bind dots with right img*/
 input#img-1:checked ~ .nav-dots label#img-dot-1,
 input#img-2:checked ~ .nav-dots label#img-dot-2,
 input#img-3:checked ~ .nav-dots label#img-dot-3,
