@@ -7,8 +7,8 @@
 
 
 #menu, #main1, #main3, #main4 {
-    border: 5px solid rgba(211, 211, 211, 0.7);
-    border-radius: 8px;
+    border: 3px solid rgba(211, 211, 211, 0.7);
+    border-radius: 6px;
 }
 
 #menu, #main1, #main2, #main5, #main5a {
@@ -25,10 +25,6 @@
     flex-wrap: nowrap;
 }
 
-#main2, #second,#main5, #main5a {
-    
-    
-}
 
 #main1 {
     display:flex;
@@ -55,7 +51,7 @@
     margin-top: 25px;  
     margin-left: 9.5%;
     margin-right: 9.5%;
-    border: 5px solid rgba(211, 211, 211, 0.7);
+    border: 3px solid rgba(211, 211, 211, 0.7);
     border-radius: 5px;
 }
 
@@ -90,14 +86,6 @@
 
 /*xxx*/
 
-div.img {
-    
-}
-
-div.img:hover {
-    
-}
-
 div.img img {
     width: 100%;
     height: auto;
@@ -115,29 +103,23 @@ div.desc {
 }
 
 .responsive {
-    padding: 0 6px;
-    float: left;
+    float: none;
     width: 19%;
-    
-    
+    display: inline-block;
+    margin-left: 3px; margin-right: 3px;
 }
 
-@media only screen and (max-width: 700px){
-    .responsive {
-        width: 49.99999%;
-        margin: 6px 0;
-    }
+#tablefix {
+    margin-left: 1.5%
 }
 
-@media only screen and (max-width: 500px){
-    .responsive {
-        width: 100%;
-    }
+#tablefix2 {
+    margin-left: 1.5%
 }
 
 .clearfix:after {
     content: "";
-    display: table;
+    display:table;
     clear: both;
 }
 
@@ -266,12 +248,12 @@ div a{
     width: 100%;
     height: 100%;
 	display: block;
-	margin-left: auto;
+	margin-left: auto
 	margin-right: auto;
 
 }
 #maindiv {
-    border: 5px solid rgba(211, 211, 211, 0.7);
+    border: 8px solid rgba(30, 30, 30, 0.8);
     margin-left: 5%; margin-right: 5%; margin-top: 24px;
     background-color: rgba(30, 30, 30, 0.7);
     border-radius: 8px;
@@ -381,15 +363,15 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
    
 }
 
+
 #main5a {
     
-    
+    display: block;
     margin-bottom: 24px;
-    border: 5px solid rgba(211,211,211, 0.7);
-    border-radius: 8px;
+    border: 3px solid rgba(211,211,211, 0.7);
+    border-radius: 6px;
     background-color: rgba(164, 196, 104, 0.6);
     justify-content: center;
-    align-content: 
 }
 
 
