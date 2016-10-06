@@ -93,12 +93,6 @@ a:hover {
     background: rgba(33, 33, 33, 0.9);
     max-height: 30em;
     margin-bottom: 64px;
-    '
-}
-.suckmyasscss {
-    margin-left: 0 auto;
-    margin-right: 0 auto;
-    
 }
 
 .aboutgroup {
@@ -368,4 +362,4 @@ h2 {
     display: inline-block;
     height: 120px;
 }
-    
+}
