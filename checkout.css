@@ -75,12 +75,6 @@ input{
     height:110px; 
 }
 
-form{
-    padding:0px;
-    align-items: flex-end;
-    padding:0px;
-    margin-bottom: 20px;
-}
 
 
 #logInNav label{
@@ -297,14 +291,15 @@ main{
 
 #items{
     flex-basis: 100%;
+    height:20px;
 }
 
 #checkout{
 
     display:flex;
-    flex-basis: 80%;
+    flex-basis: 100%;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 
 #checkout form{
@@ -355,6 +350,10 @@ section{
     height:100%;
 }
 
+section #feedback > h5{
+    margin:0px;
+}
+
 #checkout div > h3{
     margin:2px;
     text-align: center;
@@ -362,6 +361,11 @@ section{
 
 #feedback{
     flex: 1 1 auto;
+    flex-basis: 100%;
+}
+
+#feedback form{
+    width:200px;
 }
 
 aside{
@@ -472,90 +476,5 @@ footer > div h5{
     height:2px;
 }
 
-/* MEDIA 930px and below */
-@media (max-width:930px){
-    
-    div .dropbtn{
-        margin:0px;
-    }
-   
-    #logInNav{
-        height:100px;
-        flex-basis: 100%; 
-        justify-content: flex-start;
-        height:80px;
-    }
-    
-    form{
-        flex-direction: row;
-        flex-basis: 100%;
-        padding:2px;
-        
-    }
-    
-    #logInNav > h3{
-        flex-basis: 100%;
-        margin:2px;
-    }
-    
-    .formatInput{
-        display:inline-block;
-    }
-    
-    #searchDiv{
-       flex-basis:0;
-    
-    }
-    
-    #forumNav{
-        display:flex;
-        flex-wrap: wrap;
-           
-    }
-    
-    #forumNav > div{
-        flex-grow: 5;
-        margin-left: 2px;
-        margin-right: 2px;
-    }
-    
-    .threadTitle{
-        height:30px;
-        width:200px;
-        flex-grow: 60;
-        padding:5px;
-        
-    }
-}
 
-@media (max-width:850px){
-   #forumNav > #separator{
-        display:block;
-    }
-    
-    #forumNav{
-        height:100px;
-    }
-    
-    aside{
-        display:none;
-    }
-    
-    section{
-        margin-top: 30px;
-    }
-    
 
-}
-
-@media (max-width:510px){
-    
-    #brXS{
-        display:block;
-    }
-    
-    #forumNav{
-        margin-top: 10px;
-    }
-
-}
