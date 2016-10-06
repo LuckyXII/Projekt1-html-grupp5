@@ -4,54 +4,52 @@
 
 /*template flexbox model*/
 
-*{font-family:'Lobster', cursive; }
 
-#header, #menu, #main1, #main2, #main3, #main4,#main5, footer{
-    border: 2px solid black;
-    background-color: red;
-   
+
+#menu, #main1, #main3, #main4 {
+    border: 3px solid rgba(211, 211, 211, 0.7);
+    border-radius: 6px;
 }
 
-#menu, #main1, #main2, main5, footer {
-    
+#menu, #main1, #main2, #main5, #main5a {
+    margin-left: 5%;
+    margin-right: 5%;
     justify-content: center;
     
 }
 
-#flex_box{
-    flex-wrap: wrap;
-    flex-direction:column;
-     align-items: center;
-    flex-wrap: nowrap;
-}
-
-#main2, #second,#main5 {
-    
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-
-#header {
-    flex-grow: 1;
-    line-height: 10px;
+#slide{
+    margin-top: 40px;
     
 }
 
 #main1 {
+    display:flex;
+    flex-wrap: wrap;
    flex-grow: 1;
     height: 55px;
+    font-weight: bold;
+    flex-direction: row;
+    margin-top: 10px;
+    border-radius: 2px;
     
     
 }
 
+.clearfix {
+    display: block;
+    position: relative;
+    
+}
 
 #main2 {
     flex-grow: 1;
     line-height: 660px;
-    margin-top: 36px;
-    
-    
+    margin-top: 25px;  
+    margin-left: 9.5%;
+    margin-right: 9.5%;
+    border: 3px solid rgba(211, 211, 211, 0.7);
+    border-radius: 5px;
 }
 
 
@@ -60,37 +58,30 @@
     flex-grow: 1;
     margin-top: 36px;
     align-self: center;
-    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
     
 }
 
 #main3, #main4 {
     display: inline-flex;
-    align-items: center;
     line-height: 400px;
-    width: 47%;
-    justify-content: center;
+    width: 40%;
+    justify-content: flex-end;
     
 }
 
 
 
-#main5 {
+#main5, #main5a {
     flex-grow: 1;
     line-height: 0px;
     margin-top: 36px;
 }
 
 /*xxx*/
-
-div.img {
-    border: 1px solid #ccc;
-}
-
-div.img:hover {
-    border: 1px solid #777;
-}
 
 div.img img {
     width: 100%;
@@ -100,6 +91,8 @@ div.img img {
 div.desc {
     padding: 15px;
     text-align: center;
+    color: white;
+    font-family: 'Poiret one', fantasy;
 }
 
 * {
@@ -107,27 +100,23 @@ div.desc {
 }
 
 .responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
+    float: none;
+    width: 19%;
+    display: inline-block;
+    margin-left: 3px; margin-right: 3px;
 }
 
-@media only screen and (max-width: 700px){
-    .responsive {
-        width: 49.99999%;
-        margin: 6px 0;
-    }
+#tablefix {
+    margin-left: 1.5%
 }
 
-@media only screen and (max-width: 500px){
-    .responsive {
-        width: 100%;
-    }
+#tablefix2 {
+    margin-left: 1.5%
 }
 
 .clearfix:after {
     content: "";
-    display: table;
+    display:table;
     clear: both;
 }
 
@@ -135,24 +124,61 @@ div.desc {
 
 
 /*xxx*/
+footer > div h5 {
+    display: block;
+    flex-direction: row;
+    height:30px;
+    width:100%;
+    text-align: left;
+    margin:0px;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+}
 
+footer > div {
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    flex-wrap: wrap;
+    flex-basis: 20%;
+}
 
-#footer{
-    flex-grow: 1;
-    margin-top: 36px;
-    line-height: 40px;
+.footerDiv{
+    display:block;
+    width:100%;
+}
+
+#copyRight{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-basis: 100%;
+    justify-content: center;
+    color: white;
 }
 
 
 /*pictures*/
 
+body {
+    background-image: url("https://static.pexels.com/photos/38136/pexels-photo-38136.jpeg");
+    background-size: auto;
+    background-attachment: scroll;
+    background-repeat: round;
+}
 
 #header {
-    background-image: url("https://github.com/LuckyXII/Projekt-html-grupp5/blob/master/4K_logo_lighter.png?raw=true");
+    background-image: url("https://github.com/LuckyXII/Projekt1-html-grupp5/blob/master/4K_logo_lighter.png?raw=true");
     background-repeat: no-repeat;
     background-position: left;
     background-size: 540px;
     background-color: #A4C468;
+    font-weight: bold;
+    flex-grow: 1;
+    line-height: 10px;
+    border: 5px solid rgba(211, 211, 211, 1);
+    border-radius: 8px;
+    height:12em;
     
 }
 
@@ -202,25 +228,50 @@ div.desc {
 	-moz-transform: translate(100%, 0px);
 	-o-transform: translate(100%, 0px);
 	-ms-transform: translate(100%, 0px);
+<<<<<<< HEAD
 
 /*perform an non-linear animation of slide*/
+=======
+    /*transition: all .7s ease-in-out;*/
+>>>>>>> 86aafba9bcc66d231ff4da812cfa24ccec93ef4f
 	-webkit-transition: all .8s cubic-bezier(0.98, 0.01, 0.75, 1);
     -moz-transition: all .8s cubic-bezier(0.98, 0.01, 0.75, 1);
     -o-transition: all .8s cubic-bezier(0.98, 0.01, 0.75, 1);
     transition: all .8s cubic-bezier(0.98, 0.01, 0.75, 1);
 }
+<<<<<<< HEAD
 /*slider image attributes*/
+=======
+div a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-family: 'Poiret One', cursive;
+    font-size: 18px;
+}
+
+>>>>>>> 86aafba9bcc66d231ff4da812cfa24ccec93ef4f
 .slide img {
     width: 100%;
     height: 100%;
 	display: block;
-	margin-left: auto;
+	margin-left: auto
 	margin-right: auto;
 
 }
+<<<<<<< HEAD
 /*slider arrow attributes*/
+=======
+#maindiv {
+    border: 8px solid rgba(30, 30, 30, 0.8);
+    margin-left: 5%; margin-right: 5%; margin-top: 24px;
+    background-color: rgba(30, 30, 30, 0.7);
+    border-radius: 8px;
+}
+
+>>>>>>> 86aafba9bcc66d231ff4da812cfa24ccec93ef4f
 .nav label {
-    width: 200px;
+    width: 150px;
     height: 100%;
     display: none;
     position: absolute;
@@ -236,13 +287,13 @@ div.desc {
     text-align: center;
     line-height: 340px;
     font-family: "Varela Round", sans-serif;
-    background-color: rgba(255, 255, 255, .3);
+    background-color: rgba(	164, 196, 104, .3);
     text-shadow: 0px 0px 15px rgb(119, 119, 119);
 }
 
 .slide:hover + .nav label { opacity: 0.5; }
 
-.nav label:hover { opacity: 1; }
+.nav label:hover { opacity: 0.6; }
 
 .nav .next { right: 0; }
 
@@ -294,35 +345,120 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 
 
 #main3 {
-    background-image: url(http://www.dhresource.com/0x0s/f2-albu-g2-M01-07-B1-rBVaGlZK0CKARQBTAAaiS6aJ5UM346.jpg/2016%20hot%20sale%20Outdoor%20Gear%20Stainless%20Steel%20Hiking%20Mini%20portable%20Camping%20Stoves%20Fire%20jets%20with%201000-1400%20Burning%20Temperature.jpg);
+    background-image: url(http://www.kathmandu.com.au/media/catalog/product/cache/2/image/2000x/9df78eab33525d08d6e5fb8d27136e95/5/1/51197_OdysseySB_639.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    margin-right: 1%;
+    margin-left: 9.5%;
+    flex-basis: 40%
 }
 
 #main4 {
-    background-image: url(http://www.gooutdoors.co.uk/Lib/Img/Promotions/2016/August/department/sale-campingaz--2-series-bbq.jpg);
+    background-image: url(https://www.travelers.com/iw-images/resources/Weather/Medium/survival_kit_medium.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    margin-right: 9.5%;
+    margin-left: 1%;
+    flex-basis: 40%;
+    
 }
 
 #main5 {
-    background-color: #9caf74;
-}
-
-#footer {
-    background-color: #9caf74;
-    color: #3b3128;
     
     
+    margin-bottom: 0px;
+    
+    border-radius: 5px;
+    
+    
+   
 }
 
-/*text footer*/
 
-#customer {
-    text-align: center;
-    flex-direction: row;
-    margin-left: 34%
+#main5a {
+    
+    display: block;
+    margin-bottom: 24px;
+    border: 3px solid rgba(211,211,211, 0.7);
+    border-radius: 6px;
+    background-color: rgba(164, 196, 104, 0.6);
+    justify-content: center;
 }
+
+
+    
+/*x*/
+
+footer{
+   position:relative;
+   bottom:0px;
+   display:flex;
+   flex-wrap: wrap;
+   justify-content: space-around;  
+   background-color: #A4C468 ;
+   flex-basis: 100%;
+   border-radius:5px;
+   height: 16em;
+   margin-top: 32px;
+   border-top: 5px solid lightgray;
+   border-right: 5px solid lightgray;
+   border-left: 5px solid lightgray;
+   order:3;
+}
+
+
+div a{
+   list-style: none;
+   text-decoration: none;
+   color: white;
+   font-family: 'Poiret One', cursive;
+   font-size: 18px;
+
+}
+
+ 
+#copyRight{
+   display:flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   flex-basis: 100%;
+   justify-content: center;
+   color: white;
+}
+
+ 
+footer > div{
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   flex-basis: 20%;  
+}
+
+footer div > a:hover{
+   text-decoration: none;
+   color:lightgray; 
+}
+
+footer > div h5{
+   display:block;
+   color:black;
+   flex-direction: row;
+   height:30px;
+   width:100%;
+   text-align: left;
+   margin:0px;
+   font-family: 'Poiret One', cursive;
+   font-weight: bold;
+   
+}
+
+
+
+
+/*x*/
+
+
+
 
 /*menu*/
 
@@ -330,8 +466,12 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
     list-style: none;
     margin: 0;
     overflow: hidden;
-    background-color: #dea335;
+    background-color: #A4C468;
     display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     
     
 }
@@ -348,8 +488,8 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 /*buttons*/
 
 button {
-    background-color: #dea335;
-    color: brown;
+    background-color: #A4C468;
+    color: white;
     border: none;
     border-radius: 2px;
     padding: 15px 9px;
@@ -360,7 +500,7 @@ button {
 li a {
     text-decoration:none;
     text-align: center;
-    color: brown;
+    color: white;
     
     
     
@@ -369,7 +509,9 @@ li a {
 li :hover {
     background-color: #9caf74;
 }
-
+ul > button {
+    font-family: 'Poiret one', fantasy;
+}
 .dropdowncon {
     display: none;
     position: absolute;
@@ -383,11 +525,11 @@ li :hover {
 
 
 .dropdowncon a {
-    color: black;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    background-color: #dea335;
+    background-color: #A4C468;
 }
 
 #bman:hover .dropdowncon {
@@ -416,14 +558,15 @@ li :hover {
 
 
 /*search*/
-#search {
-    text-align: right;
-    
+#search{
+    margin-left: 5px;
 }
 
-#sercl{
-    flex-grow: 1;
+#stretch{
+    flex-basis: 50%;
+    flex: 1 1 auto;
 }
+
 
 /*header list*/
 
@@ -437,21 +580,23 @@ li :hover {
   display: flex;
   -webkit-flex-flow: row wrap;
   justify-content: flex-end;
-}
-
-#hli {
     display: flex;
     flex-grow: 1;
     line-height: 25px;
     margin-top: 100px;
     margin-right: 50px;
-    margin-bottom: 50px;  
-    
+    margin-bottom: 50px; 
+    width:100%;
 }
 
-#hli >li>:hover{
+#hli > div{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#hli a:hover{
    
-     background-color: #dea335 !important;
+     background-color: #A4C468 !important;
 }
 
 
@@ -462,8 +607,140 @@ li :hover {
 
 #bman,#bwoman,#bequipment,#bactivity,#bblog,#bforum {
     z-index: 5;
+    font-family: 'Poiret one', fantasy;
 }
 
 .slides {
     z-index: 1;
 }
+
+#breakSM{
+    display:none;
+    width:100%;
+    height:1px;
+}
+
+
+@media (max-width:1300px){
+    .nav .next{
+        width:100px;
+        font-size: 11em;
+    }
+    .nav .prev{
+        width:100px;
+        font-size: 11em;
+    }
+}
+
+
+@media (max-width:803px){
+   #main1{
+        height:90px;
+    } 
+}
+
+@media (max-width:730px){
+    
+    .nav .next{
+        width:90px;
+        font-size: 10em;
+    }
+    .nav .prev{
+        width:90px;
+        font-size: 10em;
+    }
+}
+
+@media (max-width:625px){
+
+    #header{
+        height: 16em;
+    }
+    
+    #hli{
+        position:relative;
+        justify-content: center;
+        top:115px;
+    }
+    
+    
+    .nav .next{
+        width:60px;
+        font-size: 6em;
+    }
+    .nav .prev{
+        width:60px;
+        font-size: 6em;
+    }
+   
+}
+
+@media (max-width:585px){
+    #header{
+     background-image: url("4K_logo_mobile_green.png");   
+    }
+    #stretch{
+        display:none;
+    }
+}
+
+
+@media (max-width:452px){
+    
+    #main1{
+        height:140px;
+    }
+    
+    #header a{
+        font-size: 0.8em;
+    }
+    
+    #header{
+        height:14.5em;
+    }
+    
+    #hli{
+        top:98px;
+    }
+    
+    
+    .nav .next{
+        width:40px;
+        font-size: 5em;
+    }
+    .nav .prev{
+        width:40px;
+        font-size: 5em;
+    }
+    
+}
+
+@media (max-width:406px){
+   
+    #main1{
+        height:90px;
+    }
+    
+    #menulink > div{
+        height:20px;
+    }
+    
+    button{
+        padding:0px;
+        margin-left:5px;
+        margin-top: 2px;
+    }
+}
+
+@media (max-width:392px){
+    footer{
+        height:20em;
+    }
+}
+
+
+
+
+@media (max-width: 200px) {
+    body {
+        background-image: url("https://static.pexels.com/photos/38136/pexels-photo-38136.jpeg");
