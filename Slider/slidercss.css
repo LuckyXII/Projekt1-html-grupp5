@@ -1,14 +1,16 @@
-﻿@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
 
 
 .slides {
     padding: 0;
-	width: 75%;
+	width: 81%;
     height: 340px;
     display: block;
     margin: 0 auto;
     position: relative;
 	overflow: hidden;
+    border: 3px solid RGBA(211, 211, 211, 0.6);
+    border-radius: 3px;
 }
 
 .slides * {
@@ -111,12 +113,12 @@ input:checked + .slide-container .nav label { display: block; }
 	position: relative;
 	border-radius: 100%;
 	display: inline-block;
-	background-color: #E1710D;
+	background-color: #A4C468;
 }
 
 .nav-dots .nav-dot:hover {
 	cursor: pointer;
-	background-color: #743700;
+	background-color: #8EA559;
 }
 
 input#img-1:checked ~ .nav-dots label#img-dot-1,
@@ -125,5 +127,5 @@ input#img-3:checked ~ .nav-dots label#img-dot-3,
 input#img-4:checked ~ .nav-dots label#img-dot-4,
 input#img-5:checked ~ .nav-dots label#img-dot-5,
 input#img-6:checked ~ .nav-dots label#img-dot-6 {
-	background-color: #743700;
+	background-color: #6F8246;
 }

@@ -18,15 +18,9 @@
     
 }
 
-#flex_box{
-    flex-wrap: wrap;
-    flex-direction:column;
-     align-items: center;
-    flex-wrap: nowrap;
-}
 
-#main2, #second,#main5, #main5a {
-    
+#slide{
+    margin-top: 40px;
     
 }
 
@@ -627,13 +621,28 @@ ul > button {
     height:1px;
 }
 
+@media (max-width:1300px){
+    .nav .next{
+        width:100px;
+        font-size: 11em;
+    }
+    .nav .prev{
+        width:100px;
+        font-size: 11em;
+    }
+}
+
 
 @media (max-width:730px){
     #main1{
         height:100px;
     }  
     
-    .nav label{
+    .nav .next{
+        width:90px;
+        font-size: 10em;
+    }
+    .nav .prev{
         width:90px;
         font-size: 10em;
     }
@@ -651,7 +660,12 @@ ul > button {
         top:115px;
     }
     
-    .nav label{
+    
+    .nav .next{
+        width:60px;
+        font-size: 6em;
+    }
+    .nav .prev{
         width:60px;
         font-size: 6em;
     }
@@ -664,6 +678,12 @@ ul > button {
     }
     #stretch{
         display:none;
+    }
+}
+
+@media (max-width:470px){
+    footer{
+        height:18em;
     }
 }
 
@@ -680,7 +700,12 @@ ul > button {
         top:98px;
     }
     
-    .nav label{
+    
+    .nav .next{
+        width:40px;
+        font-size: 5em;
+    }
+    .nav .prev{
         width:40px;
         font-size: 5em;
     }
@@ -700,6 +725,13 @@ ul > button {
         margin-top: 2px;
     }
 }
+
+@media (max-width:392px){
+    footer{
+        height:20em;
+    }
+}
+
 
 @media (max-width: 200px) {
     body {

@@ -9,8 +9,8 @@
 <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
  <meta name="viewport" content="width=device-width initial-scale=1">
 <!-- X -->
-<script src="http://html5media.googlecode.com/svn/trunk/src/html5media.min.js"></script> <!--behövs för html5 media-->
-	<link rel="stylesheet" href="slidercss.css" type="text/css" /> <!--länka till css-->
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <!--behövs för html5 media-->
+	<link rel="stylesheet" href="Slider/slidercss.css" type="text/css" /> <!--länka till css-->
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900" rel="stylesheet" type="text/css" >
 <!-- X -->
 
@@ -18,7 +18,7 @@
 <body>
     
     
-    <div id="flex_box">
+
        
         <header id="header">
         
@@ -134,14 +134,14 @@ Search</button></div>
        
         </main>
 <div id=maindiv>       
-        <div id="main2">
+        <div id="slide">
             <!-- X -->
             
             <ul class="slides">
     <input type="radio" name="radio-btn" id="img-1" checked />
     <li class="slide-container">
 		<div class="slide">
-			<img src="https://pixabay.com/static/uploads/photo/2015/10/16/10/12/mont-blanc-990896__340.jpg" />
+			<img src="https://pixabay.com/static/uploads/photo/2015/10/16/10/12/mont-blanc-990896__340.jpg" alt="slideImg" />
         </div>
 		<div class="nav">
 			<label for="img-6" class="prev">&#x2039;</label>
@@ -152,7 +152,7 @@ Search</button></div>
     <input type="radio" name="radio-btn" id="img-2" />
     <li class="slide-container">
         <div class="slide">
-          <img src="https://pixabay.com/static/uploads/photo/2016/07/15/22/18/the-lake-district-1520596__340.jpg" />
+          <img src="https://pixabay.com/static/uploads/photo/2016/07/15/22/18/the-lake-district-1520596__340.jpg" alt="slideImg"/>
         </div>
 		<div class="nav">
 			<label for="img-1" class="prev">&#x2039;</label>
@@ -163,7 +163,7 @@ Search</button></div>
     <input type="radio" name="radio-btn" id="img-3" />
     <li class="slide-container">
         <div class="slide">
-          <img src="https://pixabay.com/static/uploads/photo/2016/04/26/15/01/holiday-1354563__340.jpg" />
+          <img src="https://pixabay.com/static/uploads/photo/2016/04/26/15/01/holiday-1354563__340.jpg" alt="slideImg"/>
         </div>
 		<div class="nav">
 			<label for="img-2" class="prev">&#x2039;</label>
@@ -174,7 +174,7 @@ Search</button></div>
     <input type="radio" name="radio-btn" id="img-4" />
     <li class="slide-container">
         <div class="slide">
-          <img src="https://pixabay.com/static/uploads/photo/2016/07/19/09/09/scafell-pike-1527804__340.jpg" />
+          <img src="https://pixabay.com/static/uploads/photo/2016/07/19/09/09/scafell-pike-1527804__340.jpg" alt="slideImg"/>
         </div>
 		<div class="nav">
 			<label for="img-3" class="prev">&#x2039;</label>
@@ -185,7 +185,7 @@ Search</button></div>
     <input type="radio" name="radio-btn" id="img-5" />
     <li class="slide-container">
         <div class="slide">
-          <img src="https://pixabay.com/static/uploads/photo/2016/09/20/02/17/lake-1681671__340.jpg" />
+          <img src="https://pixabay.com/static/uploads/photo/2016/09/20/02/17/lake-1681671__340.jpg" alt="slideImg"/>
         </div>
 		<div class="nav">
 			<label for="img-4" class="prev">&#x2039;</label>
@@ -196,7 +196,7 @@ Search</button></div>
     <input type="radio" name="radio-btn" id="img-6" />
     <li class="slide-container">
         <div class="slide">
-          <img src="https://pixabay.com/static/uploads/photo/2016/04/27/20/33/mountains-1357465__340.jpg" />
+          <img src="https://pixabay.com/static/uploads/photo/2016/04/27/20/33/mountains-1357465__340.jpg" alt="slideImg"/>
         </div>
 		<div class="nav">
 			<label for="img-5" class="prev">&#x2039;</label>
@@ -230,7 +230,7 @@ Search</button></div>
         <div class="responsive">
   <div class="img">
     <a target="_blank" href="img_fjords.jpg">
-      <img src="http://blog.theclymb.com/wp-content/uploads/2014/10/Tatra.jpg" width="600" height="400">
+      <img src="http://blog.theclymb.com/wp-content/uploads/2014/10/Tatra.jpg" alt="main5img" width="600" height="400">
     </a>
     <div class="desc">Poland</div>
   </div>
@@ -239,7 +239,7 @@ Search</button></div>
            <div class="responsive">
   <div class="img">
     <a target="_blank" href="img_fjords.jpg">
-      <img src="http://www.where.ca/wp-content/uploads/2013/01/Hiking-Canada-Whistler.jpg">
+      <img src="http://www.where.ca/wp-content/uploads/2013/01/Hiking-Canada-Whistler.jpg" alt="main5img">
     </a>
     <div class="desc">Slovenia</div>
   </div>
@@ -276,7 +276,7 @@ Search</button></div>
 <div class="responsive">
   <div class="img">
     <a target="_blank" href="img_forest.jpg">
-      <img src="http://cdn.everydaycarry.com/thumbnails/15-02-24/154ecda89f162d.jpg" width="600" height="400">
+      <img src="http://cdn.everydaycarry.com/thumbnails/15-02-24/154ecda89f162d.jpg" alt="main5img" width="600" height="400">
     </a>
     <div class="desc">6 Hiking Essentials</div>
   </div>
@@ -285,7 +285,7 @@ Search</button></div>
 <div class="responsive">
   <div class="img">
     <a target="_blank" href="img_lights.jpg">
-      <img src="https://www.simplyhike.co.uk/blog/wp-content/uploads/2015/04/header1.jpg" width="600" height="400">
+      <img src="https://www.simplyhike.co.uk/blog/wp-content/uploads/2015/04/header1.jpg" alt="main5img" width="600" height="400">
     </a>
     <div class="desc">Top 5 first aid kits for hikers</div>
   </div>
@@ -294,7 +294,7 @@ Search</button></div>
 <div class="responsive">
   <div class="img">
     <a target="_blank" href="img_mountains.jpg">
-      <img src="http://www.khyam-outdoor.com/client/gfx/photos/produit/tente-de-randonnee-elixir-3-msr-avec-footprint_24737.jpg" width="600" height="400">
+      <img src="http://www.khyam-outdoor.com/client/gfx/photos/produit/tente-de-randonnee-elixir-3-msr-avec-footprint_24737.jpg" alt="main5img" width="600" height="400">
     </a>
     <div class="desc">MSR Hiking Tent</div>
   </div>
@@ -303,7 +303,7 @@ Search</button></div>
 <div class="responsive">
   <div class="img">
     <a target="_blank" href="img_fjords.jpg">
-      <img src="http://www.outdoorsports.com/media/5130/hikingboots.png" width="600" height="400">
+      <img src="http://www.outdoorsports.com/media/5130/hikingboots.png" alt="main5img" width="600" height="400">
     </a>
     <div class="desc">Boots</div>
   </div>
@@ -312,7 +312,7 @@ Search</button></div>
 <div class="responsive">
   <div class="img">
     <a target="_blank" href="img_fjords.jpg">
-      <img src="http://www.outdoorsports.com/media/5130/hikingboots.png" width="600" height="400">
+      <img src="http://www.outdoorsports.com/media/5130/hikingboots.png"  alt="main5img" width="600" height="400">
     </a>
     <div class="desc">Boots</div>
   </div>
