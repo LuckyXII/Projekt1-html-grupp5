@@ -571,7 +571,8 @@ ul > button {
     line-height: 25px;
     margin-top: 100px;
     margin-right: 50px;
-    margin-bottom: 50px;  
+    margin-bottom: 50px; 
+    width:100%;
 }
 
 #hli > div{
@@ -579,7 +580,7 @@ ul > button {
     margin-right: 5px;
 }
 
-#hli >li>:hover{
+#hli a:hover{
    
      background-color: #A4C468 !important;
 }
@@ -605,6 +606,7 @@ ul > button {
     height:1px;
 }
 
+
 @media (max-width:1300px){
     .nav .next{
         width:100px;
@@ -617,10 +619,13 @@ ul > button {
 }
 
 
+@media (max-width:803px){
+   #main1{
+        height:90px;
+    } 
+}
+
 @media (max-width:730px){
-    #main1{
-        height:100px;
-    }  
     
     .nav .next{
         width:90px;
@@ -665,13 +670,13 @@ ul > button {
     }
 }
 
-@media (max-width:470px){
-    footer{
-        height:18em;
-    }
-}
 
-@media (max-width:445px){
+@media (max-width:452px){
+    
+    #main1{
+        height:140px;
+    }
+    
     #header a{
         font-size: 0.8em;
     }
@@ -698,6 +703,9 @@ ul > button {
 
 @media (max-width:406px){
    
+    #main1{
+        height:90px;
+    }
     
     #menulink > div{
         height:20px;
@@ -715,6 +723,8 @@ ul > button {
         height:20em;
     }
 }
+
+
 
 
 @media (max-width: 200px) {
