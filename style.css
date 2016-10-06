@@ -5,11 +5,6 @@
 /*template flexbox model*/
 
 
-#header {
-    border: 5px solid rgba(211, 211, 211, 1);
-    border-radius: 8px;
-}
-
 
 #menu, #main1, #main2, #main3, #main4,#main5 {
     border: 5px solid rgba(211, 211, 211, 0.7);
@@ -36,10 +31,14 @@
 }
 
 #main1 {
+    display:flex;
+    flex-wrap: wrap;
    flex-grow: 1;
     height: 55px;
     font-weight: bold;
+    flex-direction: row;
     margin-top: 10px;
+    border-radius: 2px;
     
     
 }
@@ -171,7 +170,7 @@ footer > div {
 /*pictures*/
 
 body {
-    background-image: url(nature-forest-trees-path.jpeg);
+    background-image: url("https://static.pexels.com/photos/38136/pexels-photo-38136.jpeg");
     background-size: auto;
     background-attachment: scroll;
     background-repeat: round;
@@ -187,6 +186,9 @@ body {
     font-weight: bold;
     flex-grow: 1;
     line-height: 10px;
+    border: 5px solid rgba(211, 211, 211, 1);
+    border-radius: 8px;
+    height:12em;
     
 }
 
@@ -259,7 +261,7 @@ div a{
 }
 
 .nav label {
-    width: 200px;
+    width: 150px;
     height: 100%;
     display: none;
     position: absolute;
@@ -275,13 +277,13 @@ div a{
     text-align: center;
     line-height: 340px;
     font-family: "Varela Round", sans-serif;
-    background-color: rgba(255, 255, 255, .3);
+    background-color: rgba(	164, 196, 104, .3);
     text-shadow: 0px 0px 15px rgb(119, 119, 119);
 }
 
 .slide:hover + .nav label { opacity: 0.5; }
 
-.nav label:hover { opacity: 1; }
+.nav label:hover { opacity: 0.6; }
 
 .nav .next { right: 0; }
 
@@ -447,6 +449,10 @@ footer > div h5{
     overflow: hidden;
     background-color: #A4C468;
     display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     
     
 }
@@ -533,14 +539,15 @@ ul > button {
 
 
 /*search*/
-#search {
-    text-align: right;
-    
+#search{
+    margin-left: 5px;
 }
 
-#sercl{
-    flex-grow: 1;
+#stretch{
+    flex-basis: 50%;
+    flex: 1 1 auto;
 }
+
 
 /*header list*/
 
@@ -554,16 +561,17 @@ ul > button {
   display: flex;
   -webkit-flex-flow: row wrap;
   justify-content: flex-end;
-}
-
-#hli {
     display: flex;
     flex-grow: 1;
     line-height: 25px;
     margin-top: 100px;
     margin-right: 50px;
     margin-bottom: 50px;  
-    
+}
+
+#hli > div{
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 #hli >li>:hover{
@@ -586,13 +594,86 @@ ul > button {
     z-index: 1;
 }
 
-@media (max-width:880px){
-    #main1{
-        height:50px;
-    }
+#breakSM{
+    display:none;
+    width:100%;
+    height:1px;
+}
 
+
+@media (max-width:730px){
+    #main1{
+        height:100px;
+    }  
+    
+    .nav label{
+        width:90px;
+        font-size: 10em;
+    }
+}
+
+@media (max-width:625px){
+
+    #header{
+        height: 16em;
+    }
+    
+    #hli{
+        position:relative;
+        justify-content: center;
+        top:115px;
+    }
+    
+    .nav label{
+        width:60px;
+        font-size: 6em;
+    }
+   
+}
+
+@media (max-width:585px){
+    #header{
+     background-image: url("4K_logo_mobile_green.png");   
+    }
+    #stretch{
+        display:none;
+    }
+}
+
+@media (max-width:445px){
+    #header a{
+        font-size: 0.8em;
+    }
+    
+    #header{
+        height:14.5em;
+    }
+    
+    #hli{
+        top:98px;
+    }
+    
+    .nav label{
+        width:40px;
+        font-size: 5em;
+    }
     
 }
+
+@media (max-width:406px){
+   
+    
+    #menulink > div{
+        height:20px;
+    }
+    
+    button{
+        padding:0px;
+        margin-left:5px;
+        margin-top: 2px;
+    }
+}
+
 @media (max-width: 200px) {
     body {
-        background-image: url(seamless.jpg);
+        background-image: url("https://static.pexels.com/photos/38136/pexels-photo-38136.jpeg");
