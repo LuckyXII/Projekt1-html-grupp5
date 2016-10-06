@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Nordic Trekk Forum</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1">
+        <link type="text/css" rel="stylesheet" href="checkout.css">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+        <script src="https://use.fontawesome.com/c540402082.js"></script>
+        
+    </head>
+
+    
+  
+        
+        
+            <!-- Header -->
+            <header>
+                <!-- Logo -->
+                <div id="logo">
+                    <img src="https://github.com/LuckyXII/Projekt1-html-grupp5/blob/master/4K_logo_lighter.png?raw=true" alt="Nordic Trekk Logo">
+                </div>
+                
+                    <div id="flexheader">
+                        <h3>Thank you for shopping at Nordic Trekk!<br>To make a purchase please enter your details below and press "Purchase".</h3>          
+                    </div>
+              
+            </header>
+            <!-- END Header -->
+            
+            <!-- Main -->
+            <main>
+                
+                <!-- Empty sideBar -->
+                <aside></aside>
+                <section>
+                    <!-- Navigation -->
+                    
+                    
+            <div id="items">
+                    <h3>Nr Items: 0.</h3>
+            </div>
+        <!-- Payment information -->
+        <div id="checkout">
+         
+            <form action="/submit-payment-info">
+                
+                <!-- Subscribe -->
+                <input type="checkbox" name="subscribeBox" id="subBox" value="subBox">
+                <label for="subBox">Subscribe</label>
+                <br>
+                
+                <!-- Name -->
+                <input type="text" name="firstName" placeHolder="First Name">
+                <br>
+                <input type="text" name="lastName" placeHolder="Surname">
+                <br>
+                
+                <!-- Sex -->
+                <datalist id="sex">
+                    <option>Man</option>
+                    <option>Woman</option>
+                    <option>Other</option>
+                </datalist>
+                <input type="text" list="sex" placeholder="Sex">
+                <br>
+                
+                <!-- Date -->
+                <input type="datetime" name="dateTime" placeHolder="YYYY-MM-DD">
+                <br>
+                
+                <!-- Phone Number -->
+                <input type="text" name="phoneNumber"  placeHolder="Phone Number">
+                <br>
+                
+                <!-- Email -->
+                <input type="text" name="email"  placeHolder="E-mail">
+                <br>
+                
+                <!-- Payment Method -->
+                <select>
+                    <option value="Creditcard">Creditcard</option>
+                    <option value="Bitcoin">Bitcoin</option>
+                    <option value="swish">Swish</option>
+                </select>
+                <input type="submit" name="submitPayment method">
+                <br>
+            
+                
+            </form>
+        </div>
+                    
+                    <div>
+                        <form>
+                            <label>Log In<br></label>
+                            <input type="email" name="logInID" id="logInID" placeholder="E-mail" class="formatInput" >
+                            <input type="password" name="ligInPw" id="logInPw" placeholder="Password" class="formatInput" ><br id=brXS>
+                            <input type="checkbox" name="rememberMe" id="rememberMe"><label for="rememberMe">Remember Me.<br class="formatInput"></label>
+                            <input type="button" name="logInBtn" id="logInBtn" value="Log In">
+                            <input type="button" name="registerID" id="registerID" value="Register">
+                        </form>
+                   </div>
+        
+        <!-- User Feedback -->
+        <div id="feedback">
+            
+            <h5>Wish to leave Feedback?</h5>
+            <form action="/submit-feedback">
+                <textarea rows="5" cols="100" >
+                    Give us a piece of your mind.
+                </textarea>
+                <input type="submit" name="submitFeedback" value="Submit">
+            </form>
+            
+        </div>
+
+                    
+                </section>
+                
+                <!-- empty sidBar -->
+                <div class="sideBar"></div>
+            </main>
+            <!-- END Main -->
+               
+        <footer>
+
+
+                <div> 
+                    <h5>Navigation</h5>
+
+                        <div class="footerDiv">
+                            <a href="https://luckyxii.github.io/Projekt1-html-grupp5/index.html" ><i class="fa fa-shopping-cart" aria-hidden="true"></i> Nordic Trekk Shop</a>
+                        </div>
+                        <div class="footerDiv">
+                            <a href="https://luckyxii.github.io/Projekt1-html-grupp5/hikingBlogg.html" ><i class="fa fa-newspaper-o" aria-hidden="true"></i> Magazine</a>
+                        </div>
+
+
+                        <div class="footerDiv">
+                            <a href="https://luckyxii.github.io/Projekt1-html-grupp5/about.html" ><i class="fa fa-question-circle" aria-hidden="true"></i> About</a>
+                        </div>
+
+                        <div class="footerDiv">
+                            <a href="http://i.imgur.com/zxl58Pv.jpg?1" ><i class="fa fa-phone" aria-hidden="true"></i> Contact</a>
+                        </div>
+                </div>
+
+                <div>
+                    <h5>FAQ Shop</h5>
+                    <div class="footerDiv">
+                        <a href="http://i.imgur.com/zxl58Pv.jpg?1"><i class="fa fa-envira" aria-hidden="true"></i> Carbon Footprint</a>
+                    </div>
+                    <div class="footerDiv">
+                      <a href="http://i.imgur.com/zxl58Pv.jpg?1"><i class="fa fa-credit-card" aria-hidden="true"></i> Terms of Purchase</a>
+                    </div>
+                    <div class="footerDiv">
+                        <a href="http://i.imgur.com/zxl58Pv.jpg?1"><i class="fa fa-plane" aria-hidden="true"></i> Shipping</a>
+                    </div>
+                    <div class="footerDiv">
+                        <a href="http://i.imgur.com/zxl58Pv.jpg?1"><i class="fa fa-truck" aria-hidden="true"></i> Return Items</a>
+                    </div>
+
+
+                </div>
+
+                 <div>
+                    <h5>Want to Contribute?</h5>
+                    <div class="footerDiv">
+                        <a href="http://i.imgur.com/zxl58Pv.jpg?1"><i class="fa fa-briefcase" aria-hidden="true"></i> Jobs</a>
+                    </div>  
+                    <div class="footerDiv">
+                        <a href="http://i.imgur.com/zxl58Pv.jpg?1"><i class="fa fa-map-marker" aria-hidden="true"></i> Travel Blogger</a>
+                    </div>  
+                    <div class="footerDiv">
+                        <a href="http://i.imgur.com/zxl58Pv.jpg?1"><i class="fa fa-camera" aria-hidden="true"></i> Send Us Photos</a>
+                    </div>   
+                    <div class="footerDiv">
+                        <a href="http://i.imgur.com/zxl58Pv.jpg?1"><i class="fa fa-mobile" aria-hidden="true"></i> Job-Contact</a>
+                    </div>
+                </div>  
+
+                <div>
+                    <h5>Social Media</h5>
+                    <div class="footerDiv">
+                        <a href="https://www.facebook.com/profile.php?id=100012841875021&fref=ts" class="anchor"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+                    </div>  
+                    <div class="footerDiv">
+                        <a href="http://i.imgur.com/zxl58Pv.jpg?1" class="anchor"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+                    </div> 
+                    <div class="footerDiv">
+                        <a href="http://i.imgur.com/zxl58Pv.jpg?1" class="anchor"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+
+                <div id="copyRight">
+                    <p>&#169; Trekking For Harambe</p>
+                </div>
+
+            </footer>
+   
+         
+        
+    </body>
+
+</html>
