@@ -11,13 +11,14 @@
 }
 
 
-#menu, #main1, #main2, #main3, #main4,#main5 {
+#menu, #main1, #main3, #main4 {
     border: 5px solid rgba(211, 211, 211, 0.7);
     border-radius: 8px;
 }
 
 #menu, #main1, #main2, #main5, #main5a {
-    
+    margin-left: 5%;
+    margin-right: 5%;
     justify-content: center;
     
 }
@@ -31,8 +32,7 @@
 
 #main2, #second,#main5, #main5a {
     
-    margin-left: 5%;
-    margin-right: 5%;
+    
 }
 
 #main1 {
@@ -44,11 +44,20 @@
     
 }
 
+.clearfix {
+    display: block;
+    position: relative;
+    
+}
 
 #main2 {
     flex-grow: 1;
     line-height: 660px;
-    margin-top: 36px;   
+    margin-top: 25px;  
+    margin-left: 9.5%;
+    margin-right: 9.5%;
+    border: 5px solid rgba(211, 211, 211, 0.7);
+    border-radius: 5px;
 }
 
 
@@ -57,17 +66,18 @@
     flex-grow: 1;
     margin-top: 36px;
     align-self: center;
-    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
     
 }
 
 #main3, #main4 {
     display: inline-flex;
-    align-items: center;
     line-height: 400px;
-    width: 47%;
-    justify-content: center;
+    width: 40%;
+    justify-content: flex-end;
     
 }
 
@@ -108,7 +118,9 @@ div.desc {
 .responsive {
     padding: 0 6px;
     float: left;
-    width: 24.99999%;
+    width: 19%;
+    
+    
 }
 
 @media only screen and (max-width: 700px){
@@ -171,7 +183,7 @@ footer > div {
 /*pictures*/
 
 body {
-    background-image: url(nature-forest-trees-path.jpeg);
+    background-image: url(pexels-photo-tree.jpeg);
     background-size: auto;
     background-attachment: scroll;
     background-repeat: round;
@@ -257,6 +269,12 @@ div a{
 	margin-right: auto;
 
 }
+#maindiv {
+    border: 5px solid rgba(211, 211, 211, 0.7);
+    margin-left: 5%; margin-right: 5%; margin-top: 24px;
+    background-color: rgba(30, 30, 30, 0.7);
+    border-radius: 8px;
+}
 
 .nav label {
     width: 200px;
@@ -336,21 +354,29 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
     background-image: url(http://www.kathmandu.com.au/media/catalog/product/cache/2/image/2000x/9df78eab33525d08d6e5fb8d27136e95/5/1/51197_OdysseySB_639.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    margin-right: 1%;
+    margin-left: 9.5%;
+    flex-basis: 40%
 }
 
 #main4 {
     background-image: url(https://www.travelers.com/iw-images/resources/Weather/Medium/survival_kit_medium.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    margin-right: 9.5%;
+    margin-left: 1%;
+    flex-basis: 40%;
+    
 }
 
 #main5 {
     
     
-    margin-bottom: 24px;
-    border: 5px solid rgba(211,211,211, 0.7);
+    margin-bottom: 0px;
+    
     border-radius: 5px;
-    background-color: rgba(48, 48, 48, 0.8);
+    
+    
    
 }
 
@@ -358,10 +384,11 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
     
     
     margin-bottom: 24px;
-    border: 10px solid rgba(211,211,211, 0.7);
+    border: 5px solid rgba(211,211,211, 0.7);
     border-radius: 8px;
     background-color: rgba(164, 196, 104, 0.6);
-   
+    justify-content: center;
+    align-content: 
 }
 
 
